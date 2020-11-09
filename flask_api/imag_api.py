@@ -4,6 +4,7 @@ from PIL import Image
 from werkzeug.utils import secure_filename
 import os
 import json 
+import BinomialSolver
 app = Flask(__name__)
 
 
@@ -14,16 +15,16 @@ def index():
 	return "Flask server" 
  
 @app.route('/postdata', methods = ['POST']) 
-def postdata(): 
-    
-    file = request.files['image']
-    # Read the image via file.stream
-    print(request.headers)
+def postdata():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
 
-    file.save(os.path.join(secure_filename(file.filename)))
-    img = Image.open(file.stream)
+    result=BinomialSolver.binomialCalculate(str(text))
 
-    return jsonify({'msg': 'success', 'size': [img.width, img.height]})
+   
+
+    return jsonify({'msg': 'success','data':result})
 
 if __name__ == "__main__": 
 	app.run(port=5005) 
