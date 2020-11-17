@@ -36,7 +36,7 @@ exports.postImg=async(req,res,next)=>{
                 let data_to_flask={
                     "text":string_data
                 };
-                response2=await axios.post('http://127.0.0.1:5005/postdata',data_to_flask,{
+                response2=await axios.post('https://hackflask-api.herokuapp.com/postdata',data_to_flask,{
                     headers:{
                         "content-type": "application/json"
                         }
