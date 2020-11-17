@@ -4,25 +4,132 @@ from PIL import Image
 from werkzeug.utils import secure_filename
 import os
 import json 
-import BinomialSolver
+import EquationSolver
+import ComplexNumbers
+import ArithemeticExpr
+import PointsCoordinate
+import LinesCoordinate
+import CoordinateCircle
+import EllipseCoordinate
+import CalculusDerivative
+import CalculusIndefIntegrals
+import CalculusDefiniteIntegral
+import CalculusDoubleIntegral
 app = Flask(__name__)
 
 
 @app.route('/') 
 def index(): 
 	return "Flask server" 
+
  
-@app.route('/postdata', methods = ['POST']) 
-def postdata():
+@app.route('/postComplex', methods = ['POST']) 
+def postComplex():
+    req_data = request.get_json()
+    text= req_data["text"]
+    result=ComplexNumbers.complexInfo(text)
+    result=json.dumps(result)    
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postBodmas', methods = ['POST']) 
+def postBodmas():
+    req_data = request.get_json()
+    text= req_data["text"]
+    result=ArithemeticExpr.solveExpr(text)
+    result=json.dumps(result)
+    
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postEqSolve', methods = ['POST']) 
+def postEqSolve():
+    req_data = request.get_json()
+    text= req_data["text"]
+    result=EquationSolver.solveEqn(text)
+    result=json.dumps(result)
+    
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postCoordinate', methods = ['POST']) 
+def postCoordinate():
+    req_data = request.get_json()
+    text= req_data["text"]
+    text=str(text)
+    print(text)
+    result=PointsCoordinate.pointsInfo(text)
+    print(result)
+    result=json.dumps(result)    
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postLinesCoordinate', methods = ['POST']) 
+def postLinesCoordinate():
     req_data = request.get_json()
     text= req_data["text"]
     print(text)
+    result=LinesCoordinate.getLine(text)
+    result=json.dumps(result)
+    
+    return jsonify({'msg': 'success','data_result':result})
 
-    result=BinomialSolver.binomialCalculate(str(text))
+@app.route('/postCircleCoordinate', methods = ['POST']) 
+def circleCoordinate():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CoordinateCircle.getCircle(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
 
-   
+@app.route('/postEllipseCoordinate', methods = ['POST']) 
+def ellipseCoordinate():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=EllipseCoordinate.getEllipse(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
 
-    return jsonify({'msg': 'success','data':result})
+@app.route('/postCalculusDerivative', methods = ['POST']) 
+def calculusDerivative():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusDerivative.getDerivative(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postIndefIntegrals', methods = ['POST']) 
+def indefIntegrals():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusIndefIntegrals.getIndefIntegrals(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postDefIntegrals', methods = ['POST']) 
+def defIntegrals():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusDefiniteIntegral.getDefIntegrals(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postDoubleIntegrals', methods = ['POST']) 
+def doubleIntegrals():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusDoubleIntegral.getDoubleDefIntegrals(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
 
 if __name__ == "__main__": 
-	app.run(port=5005) 
+	app.run(threaded=True, port = int(os.environ.get('PORT', 5000))) 
