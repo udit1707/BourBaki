@@ -15,6 +15,10 @@ import CalculusDerivative
 import CalculusIndefIntegrals
 import CalculusDefiniteIntegral
 import CalculusDoubleIntegral
+import CalculusTripleIntegral
+import CalculusLimits
+import CalculusLDE
+import BinomialAnyIndex
 app = Flask(__name__)
 
 
@@ -126,6 +130,46 @@ def doubleIntegrals():
     text= req_data["text"]
     print(text)
     result=CalculusDoubleIntegral.getDoubleDefIntegrals(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postTripleIntegrals', methods = ['POST']) 
+def tripleIntegrals():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusTripleIntegral.getTripleDefIntegrals(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postCalculusLimits', methods = ['POST']) 
+def calculusLimits():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusLimits.getLimits(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postCalculusLDE', methods = ['POST']) 
+def calculusLDE():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=CalculusLDE.getLde(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postBinomialAny', methods = ['POST']) 
+def binomialAny():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=BinomialAnyIndex.getBinomialEquation(text)
     print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})

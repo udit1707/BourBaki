@@ -559,6 +559,212 @@ exports.postDoubleIntegrals=async(req,res,next)=>{
     }
 }
 
+exports.postTripleIntegrals=async(req,res,next)=>{
+    try{
+            let response2;
+            file_name=req.files.image[0].filename;
+            file_path=req.files.image[0].path;
+            var data = base64Img.base64Sync(file_path); //img to base64 data
+            let config={
+                headers:{
+                    "content-type": "application/json",
+                    "app_id": process.env.API_ID,
+                    "app_key": process.env.API_KEY
+                }
+            };
+            let imgData={"src": data,"formats": ["text", "data", "html"],"data_options": {"include_asciimath": true, "include_latex": true}};
+            const response=await axios.post('https://api.mathpix.com/v3/text',imgData,config);
+            if(!response)
+            {
+                throw error;
+            }
+            else
+            {
+                let string_data=response.data.text;
+                console.log(string_data);
+                string_data=string_data.substring(2,string_data.length-2);
+                console.log(typeof(string_data));
+                console.log(string_data);
+                let data_to_flask={
+                    "text":string_data
+                };
+                response2=await axios.post('http://127.0.0.1:5000/postTripleIntegrals',data_to_flask,{
+                    headers:{
+                        "content-type": "application/json"
+                        }
+                    });
+                if(!response2)
+                throw error;
+            }
+            console.log(response2.data.data_result);
+            clearFile(file_path);
+            let obje=JSON.parse(response2.data.data_result);
+            res.status(200).json(obje);               
+    }
+    catch(err){
+        if (!err.statusCode)    
+        {
+            err.statusCode = 500;
+        }
+        next(err);
+    }
+}
+
+exports.postCalculusLimits=async(req,res,next)=>{
+    try{
+            let response2;
+            file_name=req.files.image[0].filename;
+            file_path=req.files.image[0].path;
+            var data = base64Img.base64Sync(file_path); //img to base64 data
+            let config={
+                headers:{
+                    "content-type": "application/json",
+                    "app_id": process.env.API_ID,
+                    "app_key": process.env.API_KEY
+                }
+            };
+            let imgData={"src": data,"formats": ["text", "data", "html"],"data_options": {"include_asciimath": true, "include_latex": true}};
+            const response=await axios.post('https://api.mathpix.com/v3/text',imgData,config);
+            if(!response)
+            {
+                throw error;
+            }
+            else
+            {
+                let string_data=response.data.text;
+                console.log(string_data);
+                string_data=string_data.substring(2,string_data.length-2);
+                console.log(typeof(string_data));
+                console.log(string_data);
+                let data_to_flask={
+                    "text":string_data
+                };
+                response2=await axios.post('http://127.0.0.1:5000/postCalculusLimits',data_to_flask,{
+                    headers:{
+                        "content-type": "application/json"
+                        }
+                    });
+                if(!response2)
+                throw error;
+            }
+            console.log(response2.data.data_result);
+            clearFile(file_path);
+            let obje=JSON.parse(response2.data.data_result);
+            res.status(200).json(obje);               
+    }
+    catch(err){
+        if (!err.statusCode)    
+        {
+            err.statusCode = 500;
+        }
+        next(err);
+    }
+}
+
+exports.postCalculusLDE=async(req,res,next)=>{
+    try{
+            let response2,latexData;
+            file_name=req.files.image[0].filename;
+            file_path=req.files.image[0].path;
+            var data = base64Img.base64Sync(file_path); //img to base64 data
+            let config={
+                headers:{
+                    "content-type": "application/json",
+                    "app_id": process.env.API_ID,
+                    "app_key": process.env.API_KEY
+                }
+            };
+            let imgData={"src": data,"formats": ["text", "data", "html"],"data_options": {"include_asciimath": true, "include_latex": true}};
+            const response=await axios.post('https://api.mathpix.com/v3/text',imgData,config);
+            if(!response)
+            {
+                throw error;
+            }
+            else
+            {
+                let string_data=response.data.text;
+                latexData=string_data;
+                console.log(string_data);
+                string_data=string_data.substring(2,string_data.length-2);
+                console.log(typeof(string_data));
+                console.log(string_data);
+                let data_to_flask={
+                    "text":string_data
+                };
+                response2=await axios.post('http://127.0.0.1:5000/postCalculusLDE',data_to_flask,{
+                    headers:{
+                        "content-type": "application/json"
+                        }
+                    });
+                if(!response2)
+                throw error;
+            }
+            console.log(response2.data.data_result);
+            clearFile(file_path);
+            let obje=JSON.parse(response2.data.data_result);
+            res.status(200).json({...obje,latexString:latexData});               
+    }
+    catch(err){
+        if (!err.statusCode)    
+        {
+            err.statusCode = 500;
+        }
+        next(err);
+    }
+}
+
+exports.postBinomialAny=async(req,res,next)=>{
+    try{
+            let response2,latexData;
+            file_name=req.files.image[0].filename;
+            file_path=req.files.image[0].path;
+            var data = base64Img.base64Sync(file_path); //img to base64 data
+            let config={
+                headers:{
+                    "content-type": "application/json",
+                    "app_id": process.env.API_ID,
+                    "app_key": process.env.API_KEY
+                }
+            };
+            let imgData={"src": data,"formats": ["text", "data", "html"],"data_options": {"include_asciimath": true, "include_latex": true}};
+            const response=await axios.post('https://api.mathpix.com/v3/text',imgData,config);
+            if(!response)
+            {
+                throw error;
+            }
+            else
+            {
+                let string_data=response.data.text;
+                latexData=string_data;
+                console.log(string_data);
+                string_data=string_data.substring(2,string_data.length-2);
+                console.log(typeof(string_data));
+                console.log(string_data);
+                let data_to_flask={
+                    "text":string_data
+                };
+                response2=await axios.post('http://127.0.0.1:5000/postBinomialAny',data_to_flask,{
+                    headers:{
+                        "content-type": "application/json"
+                        }
+                    });
+                if(!response2)
+                throw error;
+            }
+            console.log(response2.data.data_result);
+            clearFile(file_path);
+            let obje=JSON.parse(response2.data.data_result);
+            res.status(200).json({...obje,latexString:latexData});               
+    }
+    catch(err){
+        if (!err.statusCode)    
+        {
+            err.statusCode = 500;
+        }
+        next(err);
+    }
+}
+
 
 const clearFile = filePath => {
     filePath = path.join(__dirname, '..', filePath);

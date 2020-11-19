@@ -26,6 +26,13 @@ router.post('/sendImageTodefIntegrals',imageCheck,coreControllers.postDefIntegra
 
 router.post('/sendImageTodoubleIntegrals',imageCheck,coreControllers.postDoubleIntegrals);
 
+router.post('/sendImageTotripleIntegrals',imageCheck,coreControllers.postTripleIntegrals);
+
+router.post('/sendImageTocalculusLimits',imageCheck,coreControllers.postCalculusLimits);
+
+router.post('/sendImageTocalculusLDE',imageCheck,coreControllers.postCalculusLDE);
+
+router.post('/sendImageToBinomialAny',imageCheck,coreControllers.postBinomialAny);
 
 
 
