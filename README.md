@@ -35,4 +35,11 @@ Bourbaki is a mathematical app that processes handwritten texts and solves them 
 * Pytorch
 * Heroku
 
+## Future Patches
+
+* Solving word problems beyond the BODMAS mathematics.
+* Add functionalities for 3D geometry problems. This problem is not solved by any of the current existing application in the market.
+* Add functionalities for plotting 3D graph and curves.
+* Add on-screen Problem-Scribble.  
+
 
