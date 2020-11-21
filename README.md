@@ -4,14 +4,15 @@
 
 Build an application that can automatically evaluate handwritten mathematical problems.
 Eg. given an equation 2+3 = 5, it should be able to tell whether the answer is correct or not.
+
 **Preferred tech stack:** *A mobile App that consumes Python REST APIs.*
 
 **Minimum Requirements**
 
-Start with simple arithmetic operations on integers - Addition, Subtraction, Multiplication, Division. It should follow the BODMAS principle.
+*Start with simple arithmetic operations on integers - Addition, Subtraction, Multiplication, Division. It should follow the BODMAS principle*
 
 **Bonus Points**
-If more complex use cases can be handled such as working with fractions, decimals, exponents etc. Sky's the limit for allowing evaluation of complex calculations and mathematical expressions.
+*If more complex use cases can be handled such as working with fractions, decimals, exponents etc. Sky's the limit for allowing evaluation of complex calculations and mathematical expressions.*
 
 ## Objective
 
