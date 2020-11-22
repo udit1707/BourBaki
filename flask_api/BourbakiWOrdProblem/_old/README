@@ -1,0 +1,10 @@
+= Zoidberg
+Solves word problems and math equations.
+
+= Python dependencies
+* SymPy
+* NumPy
+* NLTK
+
+= Usage
+cat calibrations/002.txt | ./zoidberg.py

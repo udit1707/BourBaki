@@ -73,5 +73,4 @@ def pointsInfo(s="[(1,2),(4,8),(9,12)]"):
         d={"Points":str(p),"MidPoint":str(midPoint(s))}
     else:
         d={"Points":str(p),"areCollinear":str(areCollinear(s)),"AreaPolynomial":str(areaPolynomial(s)),"PerimeterPolynomial":str(perimeterPolynomial(s)),"areConcyclic":str(areConcyclic(s))}
-    print(d)
-    #return d
+    return d 

@@ -20,6 +20,7 @@ def conv(strng):
     k=k.replace('\v','\\v')
     k=k.replace('\left','')
     k=k.replace('\\right','')
+    k=k.replace('\star ','*')
     return k
 
 def make_tree(data):
@@ -40,18 +41,38 @@ def make_tree(data):
 
     return req(1)[0]
 
+def getTree(s):
+    s=conv(s)
+    s=parse_latex(s)
+    e=Eq(s,0)
+    t=make_tree(str(e)[2:])
+    return t
+
+def getVar(t):
+    var=""
+    isThereList=False
+    count=0
+    for i in t:
+        if type(i)==list:
+            isThereList=True
+            break
+        count=count+1
+    if isThereList==True:
+        for i in t[count]:
+            var=getVar(i)
+            print(var)
+    else:
+        for i in t:
+            if i.isalpha()==True:
+                print('isaplha')
+                var=i
+                break
+    return var
+
 def calDerivative(s):
     s=conv(s)
     expr=parse_latex(s)
-    s=str(expr)
-    e=Eq(expr,0)
-    s1=str(e)[2:]
-    s1=make_tree(s1)
-    l=[]
-    for i in s1:
-        if type(i)==list:
-            l.append(str(i))
-    var=l[0].split(", ")[-1].split("'")[1]
+    var=getVar(getTree(s))
     return diff(expr,symbols(var))
 
 def getDerivative(s):

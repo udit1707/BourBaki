@@ -1,24 +1,14 @@
+import sys
+sys.path.insert(1, '/home/udit/Desktop/HAckedTeam/flask_api/BourbakiWOrdProblem/_old')
+
 from flask import Flask, jsonify, request, render_template, redirect, url_for, send_file 
 from flask_api import FlaskAPI, status, exceptions
 from PIL import Image
 from werkzeug.utils import secure_filename
-import os
-import json 
-import EquationSolver
-import ComplexNumbers
-import ArithemeticExpr
-import PointsCoordinate
-import LinesCoordinate
-import CoordinateCircle
-import EllipseCoordinate
-import CalculusDerivative
-import CalculusIndefIntegrals
-import CalculusDefiniteIntegral
-import CalculusDoubleIntegral
-import CalculusTripleIntegral
-import CalculusLimits
-import CalculusLDE
-import BinomialAnyIndex
+import os, json 
+import EquationSolver, BODMAS_Checker, ComplexNumbers, ArithemeticExpr, PointsCoordinate, LinesCoordinate, CoordinateCircle, EllipseCoordinate, CalculusDerivative, CalculusIndefIntegrals
+import CalculusDefiniteIntegral, CalculusDoubleIntegral, CalculusTripleIntegral, CalculusLimits, CalculusLDE, BinomialAnyIndex, SeriesExpansion, FourierSeries
+import Solve_Problem
 app = Flask(__name__)
 
 
@@ -40,6 +30,15 @@ def postBodmas():
     req_data = request.get_json()
     text= req_data["text"]
     result=ArithemeticExpr.solveExpr(text)
+    result=json.dumps(result)
+    
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postBodmasChecker', methods = ['POST']) 
+def postBodmasChecker():
+    req_data = request.get_json()
+    text= req_data["text"]
+    result=BODMAS_Checker.getResult(text)
     result=json.dumps(result)
     
     return jsonify({'msg': 'success','data_result':result})
@@ -170,6 +169,36 @@ def binomialAny():
     text= req_data["text"]
     print(text)
     result=BinomialAnyIndex.getBinomialEquation(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postSeriesExpan', methods = ['POST']) 
+def seriesExpan():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=SeriesExpansion.getSeries(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postFourierExpan', methods = ['POST']) 
+def fourierExpan():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=FourierSeries.getfSeries(text)
+    print(result)
+    result=json.dumps(result)
+    return jsonify({'msg': 'success','data_result':result})
+
+@app.route('/postWordProblem', methods = ['POST']) 
+def wordProb():
+    req_data = request.get_json()
+    text= req_data["text"]
+    print(text)
+    result=Solve_Problem.getSolution(text)
     print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})

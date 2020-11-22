@@ -4,9 +4,12 @@ const coreControllers=require('../controllers/core');
 const imageCheck=require('../middleware/imagecheck');
 
 
+//Route to evaluate different math problems
 router.post('/sendImageToComplex',imageCheck,coreControllers.postComplex);
 
 router.post('/sendImageToBodmas',imageCheck,coreControllers.postBodmas);
+
+router.post('/sendImageToBodmasChecker',imageCheck,coreControllers.postBodmasChecker);
 
 router.post('/sendImageToEqSolve',imageCheck,coreControllers.postEqSolve);
 
@@ -33,6 +36,15 @@ router.post('/sendImageTocalculusLimits',imageCheck,coreControllers.postCalculus
 router.post('/sendImageTocalculusLDE',imageCheck,coreControllers.postCalculusLDE);
 
 router.post('/sendImageToBinomialAny',imageCheck,coreControllers.postBinomialAny);
+
+router.post('/sendImageToSeriesExpan',imageCheck,coreControllers.postSeriesExpan);
+
+router.post('/sendImageToFourierExpan',imageCheck,coreControllers.postFourierExpan);
+
+router.post('/sendImageToWordProb',imageCheck,coreControllers.postWordProb);
+
+
+
 
 
 

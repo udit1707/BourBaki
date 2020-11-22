@@ -24,11 +24,28 @@ def limitPreprocess(s):
     #s=s.split("\to")
     #s=s[0]+"\\to"+s[1]
     s=conv(s)
-    ds=str(parse_latex(s)).split("Limit")
-    t=ds[1][1:-1].split(", ")[0]
-    sym=symbols(ds[1][1:-1].split(", ")[1])
-    lim=int(ds[1][1:-1].split(", ")[2])
-    eqn=ds[0]+t
+    ds=str(parse_latex(s)).split("Limit")[1][1:-1]
+    a=ds.split(", ")
+    if(len(a)>=3):
+        #t=a[0]
+        sym=symbols(a[1])
+        if a[2]=="oo" or a[2]=="-oo":
+            lim=symbols(a[2])
+        else:
+            lim=int(a[2])
+        eqn=a[0]
+    elif(len(a)<3):
+        sym=symbols("x")
+        lim=symbols("oo")
+        eqn="x"
+    else:
+        b=a[:-2]
+        eqn=", ".join(b)
+        sym=symbols(a[-2])
+        if a[-1]=="oo" or a[-1]=="-oo":
+            lim=symbols(a[-1])
+        else:
+            lim=int(a[-1])
     return eqn,sym,lim
 
 def calLimits(s):

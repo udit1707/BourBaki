@@ -36,8 +36,14 @@ def defpreProcess(s):
         ss=ss.split(", ")
         if len(ss)==3:
             sym=symbols(ss[0])
-            llim=int(ss[1])
-            hlim=int(ss[2])
+            if ss[1]=="oo" or ss[1]=="-oo":
+                llim=symbols(ss[1])
+            else:
+                llim=int(ss[1])
+            if ss[2]=="oo" or ss[2]=="-oo":
+                hlim=symbols(ss[2])
+            else:
+                hlim=int(ss[2])
             l.append((sym,llim,hlim))
     return a[0],l
 
@@ -46,6 +52,6 @@ def tripleIntegrals(s):
     return integrate(sympify(s,evaluate=False),*p)
 
 def getTripleDefIntegrals(s):
-    DI=tripleIntegrals(s)
-    d={"TripleDefiniteIntegrals":str(DI)}
+    TI=tripleIntegrals(s)
+    d={"TripleDefiniteIntegrals":str(TI)}
     return d

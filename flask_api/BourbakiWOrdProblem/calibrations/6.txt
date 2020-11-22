@@ -1,0 +1,5 @@
+Marc has 10 apples.
+He throws 2 apples away.
+He gives 2 apples to Jim.
+Marc gives 3 apples to Julia.
+How many apples does Marc have now?
