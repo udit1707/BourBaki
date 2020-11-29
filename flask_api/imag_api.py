@@ -28,8 +28,7 @@ def postBodmas():
     req_data = request.get_json()
     text= req_data["text"]
     result=ArithemeticExpr.solveExpr(text)
-    result=json.dumps(result)
-    
+    result=json.dumps(result)    
     return jsonify({'msg': 'success','data_result':result})
 
 @app.route('/postBodmasChecker', methods = ['POST']) 
@@ -37,8 +36,7 @@ def postBodmasChecker():
     req_data = request.get_json()
     text= req_data["text"]
     result=BODMAS_Checker.getResult(text)
-    result=json.dumps(result)
-    
+    result=json.dumps(result)    
     return jsonify({'msg': 'success','data_result':result})
 
 @app.route('/postEqSolve', methods = ['POST']) 
@@ -46,8 +44,7 @@ def postEqSolve():
     req_data = request.get_json()
     text= req_data["text"]
     result=EquationSolver.solveEqn(text)
-    result=json.dumps(result)
-    
+    result=json.dumps(result)    
     return jsonify({'msg': 'success','data_result':result})
 
 @app.route('/postCoordinate', methods = ['POST']) 
@@ -55,9 +52,9 @@ def postCoordinate():
     req_data = request.get_json()
     text= req_data["text"]
     text=str(text)
-    print(text)
+    #print(text)
     result=PointsCoordinate.pointsInfo(text)
-    print(result)
+    #print(result)
     result=json.dumps(result)    
     return jsonify({'msg': 'success','data_result':result})
 
@@ -65,19 +62,18 @@ def postCoordinate():
 def postLinesCoordinate():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=LinesCoordinate.getLine(text)
-    result=json.dumps(result)
-    
+    result=json.dumps(result)    
     return jsonify({'msg': 'success','data_result':result})
 
 @app.route('/postCircleCoordinate', methods = ['POST']) 
 def circleCoordinate():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CoordinateCircle.getCircle(text)
-    print(result)
+    #print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -85,9 +81,8 @@ def circleCoordinate():
 def ellipseCoordinate():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=EllipseCoordinate.getEllipse(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -95,9 +90,8 @@ def ellipseCoordinate():
 def calculusDerivative():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusDerivative.getDerivative(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -105,9 +99,8 @@ def calculusDerivative():
 def indefIntegrals():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusIndefIntegrals.getIndefIntegrals(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -115,9 +108,8 @@ def indefIntegrals():
 def defIntegrals():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusDefiniteIntegral.getDefIntegrals(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -125,9 +117,8 @@ def defIntegrals():
 def doubleIntegrals():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusDoubleIntegral.getDoubleDefIntegrals(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -135,9 +126,8 @@ def doubleIntegrals():
 def tripleIntegrals():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusTripleIntegral.getTripleDefIntegrals(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -145,9 +135,9 @@ def tripleIntegrals():
 def calculusLimits():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusLimits.getLimits(text)
-    print(result)
+    #print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -155,9 +145,8 @@ def calculusLimits():
 def calculusLDE():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=CalculusLDE.getLde(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -165,9 +154,8 @@ def calculusLDE():
 def binomialAny():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=BinomialAnyIndex.getBinomialEquation(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -175,9 +163,8 @@ def binomialAny():
 def seriesExpan():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=SeriesExpansion.getSeries(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -185,9 +172,8 @@ def seriesExpan():
 def fourierExpan():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=FourierSeries.getfSeries(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 
@@ -195,9 +181,8 @@ def fourierExpan():
 def wordProb():
     req_data = request.get_json()
     text= req_data["text"]
-    print(text)
+    #print(text)
     result=Solve_Problem.getSolution(text)
-    print(result)
     result=json.dumps(result)
     return jsonify({'msg': 'success','data_result':result})
 

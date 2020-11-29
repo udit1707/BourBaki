@@ -234,10 +234,10 @@ exports.postCoordinate = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             ///string_data=string_data.substring(1,string_data.length-1);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -283,10 +283,10 @@ exports.postLinesCoordinate = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -337,10 +337,10 @@ exports.postCircleCoordinate = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -391,10 +391,10 @@ exports.postEllipseCoordinate = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(1, string_data.length - 1);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -444,10 +444,10 @@ exports.postCalculusDerivative = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -498,10 +498,10 @@ exports.postIndefIntegrals = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -552,10 +552,10 @@ exports.postDefIntegrals = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -606,10 +606,10 @@ exports.postDoubleIntegrals = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -660,10 +660,10 @@ exports.postTripleIntegrals = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -714,10 +714,10 @@ exports.postCalculusLimits = async (req, res, next) => {
         }
         else {
             let string_data = response.data.text;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -769,10 +769,10 @@ exports.postCalculusLDE = async (req, res, next) => {
         else {
             let string_data = response.data.text;
             latexData = string_data;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -825,10 +825,10 @@ exports.postBinomialAny = async (req, res, next) => {
         else {
             let string_data = response.data.text;
             latexData = string_data;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -880,10 +880,10 @@ exports.postSeriesExpan = async (req, res, next) => {
         else {
             let string_data = response.data.text;
             latexData = string_data;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };
@@ -935,10 +935,10 @@ exports.postFourierExpan = async (req, res, next) => {
         else {
             let string_data = response.data.text;
             latexData = string_data;
-            console.log(string_data);
+            //console.log(string_data);
             string_data = string_data.substring(2, string_data.length - 2);
-            console.log(typeof (string_data));
-            console.log(string_data);
+            //console.log(typeof (string_data));
+            //console.log(string_data);
             let data_to_flask = {
                 "text": string_data
             };

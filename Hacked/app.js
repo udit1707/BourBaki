@@ -49,8 +49,7 @@ const fileStorage=multer.diskStorage({
 app.use(bodyParser.json());
 
 //Multer middleware
-app.use(
-  multer({ storage: fileStorage,fileFilter:fileFilter}).fields([{name:'image'}]));
+app.use(multer({ storage: fileStorage,fileFilter:fileFilter}).fields([{name:'image'}]));
 
 
 app.use((req, res, next) => {
@@ -64,7 +63,8 @@ app.use((req, res, next) => {
   });
 
   app.use('/core',coreRoutes);
-
+  
+  //middleware to handle exceptions
   app.use((error,req,res,next)=>{
     console.log(error);
     const status=error.statusCode||500;
