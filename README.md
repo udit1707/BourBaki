@@ -25,7 +25,9 @@ Bourbaki is a mathematical app that processes handwritten texts and solves them 
 
 ### Firebase Powered Authentication
 
-![Welcome1](https://user-images.githubusercontent.com/43987867/99907252-d2377880-2d01-11eb-910e-5f7035e020d4.jpeg)![Welcome2](https://user-images.githubusercontent.com/43987867/99906972-1cb7f580-2d00-11eb-8b18-93a4b6710a75.jpeg)
+![opening screen](https://user-images.githubusercontent.com/43987867/100543704-ad9a4e00-3277-11eb-987c-397d7db14086.gif)
+
+![Welcome2](https://user-images.githubusercontent.com/43987867/99906972-1cb7f580-2d00-11eb-8b18-93a4b6710a75.jpeg)
 
 ![Login](https://user-images.githubusercontent.com/43987867/99906968-1a559b80-2d00-11eb-9e46-b40d1366460f.jpeg)![Signup](https://user-images.githubusercontent.com/43987867/99907134-170edf80-2d01-11eb-9bf4-95b4162274c5.jpeg)
 
