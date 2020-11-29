@@ -33,7 +33,7 @@ def ldePreprocess(s):
 
 def ldeSolve(s):
     expr,func,x=ldePreprocess(s)
-    return dsolve(expr,func(x))
+    return dsolve(expr,func(x)),str(x)
 
 def getLde(s):
     lde={"LDE":str(ldeSolve(s))}

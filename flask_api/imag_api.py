@@ -1,6 +1,5 @@
 import sys
-sys.path.insert(1, '/home/udit/Desktop/HAckedTeam/flask_api/BourbakiWOrdProblem/_old')
-
+sys.path.insert(1, 'BourbakiWOrdProblem/_old')
 from flask import Flask, jsonify, request, render_template, redirect, url_for, send_file 
 from flask_api import FlaskAPI, status, exceptions
 from PIL import Image
@@ -10,7 +9,6 @@ import EquationSolver, BODMAS_Checker, ComplexNumbers, ArithemeticExpr, PointsCo
 import CalculusDefiniteIntegral, CalculusDoubleIntegral, CalculusTripleIntegral, CalculusLimits, CalculusLDE, BinomialAnyIndex, SeriesExpansion, FourierSeries
 import Solve_Problem
 app = Flask(__name__)
-
 
 @app.route('/') 
 def index(): 

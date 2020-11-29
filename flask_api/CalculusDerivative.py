@@ -57,9 +57,10 @@ def getVar(t):
             isThereList=True
             break
         count=count+1
+    print(count)
     if isThereList==True:
         for i in t[count]:
-            var=getVar(i)
+            var=getVar(t[count])
             print(var)
     else:
         for i in t:
@@ -73,9 +74,13 @@ def calDerivative(s):
     s=conv(s)
     expr=parse_latex(s)
     var=getVar(getTree(s))
-    return diff(expr,symbols(var))
+    return diff(expr,symbols(var)),var
 
 def getDerivative(s):
-    dv=calDerivative(s)
-    d={"derivative":str(dv)}
+    dv,var=calDerivative(s)
+    a=symbols(var)
+    x=symbols('x')
+    dv=str(dv).replace(var,'x')
+    l=latex(eval(dv),symbol_names={'x':x})
+    d={"derivative":dv.replace('x',var),"latex":l.replace('x',var)}
     return d

@@ -59,7 +59,7 @@ def getVar(t):
         count=count+1
     if isThereList==True:
         for i in t[count]:
-            var=getVar(i)
+            var=getVar(t[count])
             print(var)
     else:
         for i in t:
@@ -71,12 +71,21 @@ def getVar(t):
 def fseriesExpansion(s):
     s1=conv(s)
     expr=parse_latex(s1)
-    vara=getVar(getTree(s))
-    print(expr)
-    print(vara)
-    return fourier_series(expr,(symbols(vara),-pi,pi))
+    var=getVar(getTree(s))
+    fs=fourier_series(expr,(symbols(var),-pi,pi))
+    F=""
+    for i in range(0,3):
+        if i <2:
+            F=F+str(fs[i])+" + "
+        else:
+            F=F+str(fs[i])
+    return F,var    
 
 def getfSeries(s):
-    d={"Series":str(fseriesExpansion(s))}
+    fs,var=fseriesExpansion((s))
+    x=symbols('x')
+    fs=fs.replace(var,'x')
+    l=latex(eval(fs),symbol_names={'x':x})
+    d={"Series":fs.replace('x',var)+" + ....","latex":l.replace('x',var)+" + ...."}
     return d
     

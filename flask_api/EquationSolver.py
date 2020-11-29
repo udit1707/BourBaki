@@ -61,8 +61,38 @@ def eqnPreProcess(s):
     var=symbols(var)
     return expr,var    
 
+def getTree(s):
+    s=conv(s)
+    s=parse_latex(s)
+    #e=Eq(s,0)
+    t=make_tree(str(s)[2:])
+    return t
+
+def getVar(t):
+    var=""
+    isThereList=False
+    count=0
+    for i in t:
+        if type(i)==list:
+            isThereList=True
+            break
+        count=count+1
+    if isThereList==True:
+        for i in t[count]:
+            var=getVar(i)
+    else:
+        for i in t:
+            if i.isalpha()==True:
+                var=i
+                break
+    return var
 def solveEqn(s):
     #expr=parse_latex(r"{}".format(s))
-    e,p=eqnPreProcess(s)
-    d={"solution":str(solveset(e,p))}
+    e=conv(s)
+    e=parse_latex(e)
+    p=getVar(getTree(s))
+    n=symbols('n')
+    sol=str(solveset(e,p)).replace('_','')
+    l=latex(eval(sol),symbol_names={'n':n})
+    d={"solution":str(sol),'latex':l}
     return d

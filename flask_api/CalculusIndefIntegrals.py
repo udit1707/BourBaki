@@ -5,6 +5,7 @@ Created on Wed Nov 18 01:10:27 2020
 @author: Arsh
 """
 
+#from sympy import *
 from sympy import *
 from sympy.parsing.latex import parse_latex
 import re
@@ -49,9 +50,13 @@ def preProcess(s):
     return l
 def indefIntegrals(s):
     l=preProcess(s)
-    return integrate(sympify(l[0],evaluate=False),symbols(l[1]))
+    return integrate(sympify(l[0],evaluate=False),symbols(l[1])),l[1]
 
 def getIndefIntegrals(s):
-    I=indefIntegrals(s)
-    d={"Integrals":str(I)}
+    I,var=indefIntegrals(s)
+    x=symbols('x')
+    I=str(I).replace(var,'x')
+    l=latex(eval(I),symbol_names={'x':x})
+    I=str(I)+" + Constant"
+    d={"Integrals":str(I).replace('x',var),'latex':l.replace('x',var) +" + C"}
     return d

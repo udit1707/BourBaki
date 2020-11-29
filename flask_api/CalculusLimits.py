@@ -17,7 +17,9 @@ def conv(strng):
     k=k.replace('\r','\\r')
     k=k.replace('\t','\\t')
     k=k.replace('\v','\\v')
-    
+    k=k.replace('\\left','')
+    k=k.replace('\\right','')
+    k=k.replace('arrow','\\rightarrow')
     return k
 
 def limitPreprocess(s):
@@ -28,12 +30,12 @@ def limitPreprocess(s):
     a=ds.split(", ")
     if(len(a)>=3):
         #t=a[0]
-        sym=symbols(a[1])
-        if a[2]=="oo" or a[2]=="-oo":
-            lim=symbols(a[2])
+        sym=symbols(a[-2])
+        if a[-1]=="oo" or a[-1]=="-oo":
+            lim=symbols(a[-1])
         else:
-            lim=int(a[2])
-        eqn=a[0]
+            lim=int(a[-1])
+        eqn=", ".join(a[:-2])
     elif(len(a)<3):
         sym=symbols("x")
         lim=symbols("oo")

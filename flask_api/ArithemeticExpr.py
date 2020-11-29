@@ -20,11 +20,12 @@ def conv(strng):
     k=k.replace('\v','\\v')
     k=k.replace('\left','')
     k=k.replace('\\right','')
+    k=k.replace("^{*}"," \\times ")
     return k
 
 def solveExpr(s):
     s=conv(s)
-    s=parse_latex(s)
+    s=str(parse_latex(s))
     ans=float(sympify(s,evaluate=True))
     d={"ans":ans}
     return d

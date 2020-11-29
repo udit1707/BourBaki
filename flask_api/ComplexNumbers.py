@@ -24,11 +24,12 @@ def argComplex(s):
 def conjugateComplex(s):
     s1=str(preProcess(s))
     return str(conjugate(sympify(s1,evaluate=False)))
+
 def complexInfo(s):
     c={"real":"",'img':'',"abs":"","arg":"","conjugate":""}
-    c["real"]=returnReal(s)
-    c["img"]=returnImg(s)
-    c["abs"]=absComplex(s)
-    c["arg"]=argComplex(s)
-    c['conjugate']=conjugateComplex(s)
+    c["real"]=latex(eval(returnReal(s)))
+    c["img"]=latex(eval(returnImg(s)))
+    c["abs"]=latex(eval(absComplex(s)))
+    c["arg"]=latex(eval(argComplex(s)))
+    c['conjugate']=latex(eval(conjugateComplex(s)))
     return c

@@ -59,7 +59,7 @@ def getVar(t):
         count=count+1
     if isThereList==True:
         for i in t[count]:
-            var=getVar(i)
+            var=getVar(t[count])
             print(var)
     else:
         for i in t:
@@ -72,9 +72,13 @@ def seriesExpansion(s):
     s1=conv(s)
     expr=parse_latex(s1)
     var=getVar(getTree(s))
-    return series(expr,symbols(var))
+    return series(expr,symbols(var)),var
 
 def getSeries(s):
-    d={"Series":str(seriesExpansion(s))}
+    sol,var=seriesExpansion(s)
+    sol=str(sol).replace(var,'x')
+    x=symbols('x')
+    l=latex(eval(sol),symbol_names={"x":x})
+    d={"series":sol.replace('x',var),"latex":l.replace('x', var)}
     return d
     
