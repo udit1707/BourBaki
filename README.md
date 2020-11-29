@@ -32,7 +32,7 @@ Demo Link - https://www.youtube.com/watch?v=RyVen94LiUk&t=14s
 
 ![Login](https://user-images.githubusercontent.com/43987867/99906968-1a559b80-2d00-11eb-9e46-b40d1366460f.jpeg)![Signup](https://user-images.githubusercontent.com/43987867/99907134-170edf80-2d01-11eb-9bf4-95b4162274c5.jpeg)
 
-### Want help on your daily Maths assingments ??
+### Want help on your daily Maths assignments ??
 
 ***Click your Query***
 
