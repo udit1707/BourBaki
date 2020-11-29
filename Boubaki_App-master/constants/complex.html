@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New SAT Math: How to Handle Complex Numbers</title><link rel="stylesheet" href="https://magoosh.com/hs/wp-content/cache/min/13/b048926963283b40063f450b24b12e01.css" media="all" data-minify="1" />
+        
+        
+        <script data-minify="1" src="https://magoosh.com/hs/wp-content/cache/min/13/ajax/libs/jquery/1.11.3/jquery.min-61e4141c57da5739f0e193f5a908bc7a.js"></script>
+        <script data-minify="1" src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/cache/min/13/hs/wp-content/themes/magoosh-hs-theme-master/functions-680fd4614e9e85ccd764893c45a31680.js"></script>
+
+    
+<!-- Social Warfare v4.1.0 https://warfareplugins.com - BEGINNING OF OUTPUT -->
+<meta property="og:description" content="Don't be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them.">
+<meta property="og:title" content="New SAT Math: How to Handle Complex Numbers">
+<meta property="article_publisher" content="https://www.facebook.com/MagooshSAT/">
+<meta property="fb:app_id" content="529576650555031">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/">
+<meta property="og:site_name" content="Magoosh Blog | High School">
+<meta property="article:published_time" content="2016-06-22T16:01:02-07:00">
+<meta property="article:modified_time" content="2017-11-07T17:35:15-08:00">
+<meta property="og:updated_time" content="2017-11-07T17:35:15-08:00">
+<meta name="twitter:title" content="New SAT Math: How to Handle Complex Numbers">
+<meta name="twitter:description" content="Don't be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them.">
+<meta name="twitter:site" content="@magooshsat_act">
+<meta name="twitter:creator" content="@magooshsat_act">
+<meta name="twitter:card" content="summary">
+<style>
+	@font-face {
+		font-family: "sw-icon-font";
+		src:url("https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.1.0");
+		src:url("https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.eot?ver=4.1.0#iefix") format("embedded-opentype"),
+		url("https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.woff?ver=4.1.0") format("woff"),
+		url("https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.ttf?ver=4.1.0") format("truetype"),
+		url("https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/fonts/sw-icon-font.svg?ver=4.1.0#1445203416") format("svg");
+		font-weight: normal;
+		font-style: normal;
+		font-display:block;
+	}
+</style>
+<!-- Social Warfare v4.1.0 https://warfareplugins.com - END OF OUTPUT -->
+
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v15.2 - https://yoast.com/wordpress/plugins/seo/ -->
+	<meta name="description" content="Don&#039;t be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them. Click to find out more." />
+	<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+	<link rel="canonical" href="https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="New SAT Math: How to Handle Complex Numbers" />
+	<meta property="og:description" content="Don&#039;t be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them. Click to find out more." />
+	<meta property="og:url" content="https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/" />
+	<meta property="og:site_name" content="Magoosh Blog | High School" />
+	<meta property="article:publisher" content="https://www.facebook.com/MagooshSat/" />
+	<meta property="article:published_time" content="2016-06-22T23:01:02+00:00" />
+	<meta property="article:modified_time" content="2017-11-08T01:35:15+00:00" />
+	<meta property="og:image" content="https://magoosh.com/hs/files/2016/05/500px-Complex_number_illustration.svg_.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@MagooshSAT_ACT" />
+	<meta name="twitter:site" content="@MagooshSAT_ACT" />
+	<meta name="twitter:label1" value="Written by">
+	<meta name="twitter:data1" value="Minh Nguyen">
+	<meta name="twitter:label2" value="Est. reading time">
+	<meta name="twitter:data2" value="2 minutes">
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Magoosh Blog | High School &raquo; New SAT Math: How to Handle Complex Numbers Comments Feed" href="https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	
+
+
+
+
+<style id='rocket-lazyload-inline-css' type='text/css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;cursor:pointer;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:72px;width:72px;left:50%;top:50%;margin-left:-36px;margin-top:-36px;position:absolute;background:url(https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat;cursor:pointer}
+</style>
+<script type='text/javascript' src='https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://magoosh.com/hs/wp-json/" /><link rel="alternate" type="application/json" href="https://magoosh.com/hs/wp-json/wp/v2/posts/7183" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://magoosh.com/hs/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://magoosh.com/hs/wp-includes/wlwmanifest.xml" /> 
+<link rel='shortlink' href='https://magoosh.com/hs/?p=7183' />
+<style>.qod-title{color:#26B67C;}.qod-button{padding:5px 8px; border-radius: 10px; background-color: #26B67C; color:white;}.qod-button:hover {background:#009573; text-decoration:none; color:white;}.qod div{text-align:center; margin-top:10px;}</style><script type="text/javascript">
+	window._zem_rp_post_id = '7183';
+	window._zem_rp_thumbnails = false;
+	window._zem_rp_post_title = 'New+SAT+Math%3A+How+to+Handle+Complex+Numbers';
+	window._zem_rp_post_tags = ['sat', 'root', 'pump', 'handl', 'test', 'squar', 'litter', 'guid', 'fool', 'neg', 'a', 'math', 'imaginari', 'deal', 'radic', 'letter'];
+	window._zem_rp_static_base_url = 'https://content.zemanta.com/static/';
+	window._zem_rp_wp_ajax_url = 'https://magoosh.com/hs/wp-admin/admin-ajax.php';
+	window._zem_rp_plugin_version = '1.14';
+	window._zem_rp_num_rel_posts = '4';
+</script>
+<style type="text/css">
+.related_post_title {
+}
+ul.related_post {
+}
+ul.related_post li {
+}
+ul.related_post li a {
+}
+ul.related_post li img {
+}</style>
+<!-- tracking codes go here -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KDKF3SN');</script>
+	<!-- End Google Tag Manager -->
+	
+	<!-- Start Visual Website Optimizer Asynchronous Code -->
+	<script type='text/javascript'>
+	var _vwo_code=(function(){
+	var account_id=254768,
+	settings_tolerance=2000,
+	library_tolerance=2500,
+	use_existing_jquery=false,
+	// DO NOT EDIT BELOW THIS LINE
+	f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+	</script>
+	<!-- End Visual Website Optimizer Asynchronous Code -->
+
+	<!-- KissInsights -->
+	<script type="text/javascript">var _kiq = _kiq || [];</script>
+	<script data-minify="1" type="text/javascript" src="https://magoosh.com/hs/wp-content/cache/min/13/ki.js/5107/2-O-73cf85a40844f14e7ce797e2dd85978e.js" async="true"></script>
+	<!-- End KissInsights -->
+
+<!-- end tracking code -->
+<script type="application/ld+json" data-schema="7183-post-Default">{"@context":"https:\/\/schema.org\/","@type":"BlogPosting","@id":"https:\/\/magoosh.com\/hs\/sat\/2016\/new-sat-math-complex-numbers\/#BlogPosting","mainEntityOfPage":"https:\/\/magoosh.com\/hs\/sat\/2016\/new-sat-math-complex-numbers\/","headline":"New SAT Math: How to Handle Complex Numbers","name":"New SAT Math: How to Handle Complex Numbers","description":"Don't be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them. Click to find out more.","datePublished":"2016-06-22","dateModified":"2017-11-07","author":{"@type":"Person","@id":"https:\/\/magoosh.com\/hs\/author\/minhnguyen\/#Person","name":"Minh Nguyen","url":"https:\/\/magoosh.com\/hs\/author\/minhnguyen\/","description":"Minh's passion for helping students succeed grew during his time as a career counselor at the University of California, Irvine. Now, he's helping students all over the world by spilling SAT\/ACT secrets through blog posts on Magoosh. When he's not busy tutoring or writing, he enjoys playing guitar, traveling, and talking about himself in third-person.","image":{"@type":"ImageObject","@id":"https:\/\/secure.gravatar.com\/avatar\/4fd2c84007de28874ef1b1a67eaef73c?s=96&d=mm&r=g","url":"https:\/\/secure.gravatar.com\/avatar\/4fd2c84007de28874ef1b1a67eaef73c?s=96&d=mm&r=g","height":96,"width":96}},"publisher":{"@type":"Organization","name":"Magoosh","logo":{"@type":"ImageObject","@id":"https:\/\/magoosh.com\/hs\/files\/2019\/02\/Magoosh-logo-purple-60h.png","url":"https:\/\/magoosh.com\/hs\/files\/2019\/02\/Magoosh-logo-purple-60h.png","width":265,"height":60}},"image":{"@type":"ImageObject","@id":"https:\/\/magoosh.com\/hs\/files\/2016\/05\/500px-Complex_number_illustration.svg_.png","url":"https:\/\/magoosh.com\/hs\/files\/2016\/05\/500px-Complex_number_illustration.svg_.png","height":"538","width":"500"},"url":"https:\/\/magoosh.com\/hs\/sat\/2016\/new-sat-math-complex-numbers\/","about":["SAT"],"wordCount":566}</script>
+                <style id="MagooshLazyLoadCommentsBetterUI-css">
+                    #llc_comments {display: none;}
+                    #llc-comments-loader img {display: none;}
+                    #llc_comments_button {display:none;}
+                    #llc_comments > h3 {display:none;}
+                    #llc_comments #comments {display: block;}
+                </style>
+            <link rel="icon" href="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/primary-checks-100x100.png" sizes="32x32" />
+<link rel="icon" href="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/primary-checks-100x100.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/primary-checks-100x100.png" />
+<meta name="msapplication-TileImage" content="https://magoosh.com/hs/files/2016/05/primary-checks-100x100.png" />
+<script>
+window.onload=function() {
+	var anchors = document.getElementsByTagName('a');
+	
+	for (var i = 0; i < anchors.length; i++) {
+		if (anchors[i].target == '_blank') {
+			var rel = anchors[i].rel.split(" ");
+			
+    	    if (rel.indexOf("noopener") == -1) 
+    	    	anchors[i].rel += " noopener";
+    	    if (rel.indexOf("noreferrer") == -1) 
+    	    	anchors[i].rel += " noreferrer";
+    	    	
+    	   	anchors[i].rel = anchors[i].rel.trim();
+    	}
+	}
+};
+</script>
+		<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+
+@media screen and (max-width: 1059px) {
+
+  .hello-bar .hello-left{
+   display: block;
+   width: 50%;
+  }
+  .hello-bar .hello-right{
+   float:right;
+   width: 50%;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  /* line 149, ../sass/screen.scss */
+  nav{
+    margin: 0px auto 0;
+  }
+  .blog-loop {
+	margin-top: 140px;
+  }
+  .hello-bar {
+   display: block;
+   height: auto !important;
+   overflow: hidden;
+   padding-bottom: 5px;
+   position: relative;
+  }
+  
+  .hello-bar .hekevllo-left,
+  .hello-bar .hello-right {
+   width: 100%;
+   text-align: center;
+   margin-right: 0;
+   margin-left: 0;
+  }
+
+  .hello-bar .hello-left p,
+  .hello-bar .hello-right p {
+   padding: 0px;
+
+  }
+  
+}
+
+.quiz-form label {
+   display: inline !important;
+   cursor: pointer;
+}
+
+.quiz-form input[type='checkbox'] {
+   display: inline !important;
+}
+
+.quiz-form input[type='radio'] {
+   display: inline !important;
+}
+
+.question-choices {
+	margin-top: 10px;
+}
+
+.watupro-progress-bar {
+	border-radius: 10px;
+	background: rgba(164,179,87,1);
+	background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
+	background: -webkit-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -o-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: -ms-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+	background: linear-gradient(to right, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+}
+
+
+ul.no_bullet {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+li.bulb {
+list-style-type: none;
+background: url('https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/gmat/files/2019/12/light-bulb-24.png') no-repeat left top;
+height: 54px;
+padding-left: 44px;
+padding-bottom: 10px;
+}
+
+li.star {
+list-style-type: none;
+background: url('https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/gmat/files/2019/12/lstar24.png') no-repeat left top;
+height: 54px;
+padding-left: 54px;
+padding-bottom: 25px;
+}
+
+li.warning {
+list-style-type: none;
+background: url('https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/gmat/files/2019/12/danger24.png') no-repeat left top;
+height: 54px;
+padding-left: 54px;
+padding-bottom: 10px;
+}
+
+.bordered {
+padding-top: 10px;	
+padding-bottom: 10px;	
+padding-left: 20px;
+border: 1px solid #26B67C;
+border-radius: 8px;
+  }
+
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>    </head>
+
+
+    <body>
+    	    	<div class='hello-bar'>
+            <div class="wrap">
+                <div class='hello-left'>
+                    <p><a href="https://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=toptext&utm_content=practice" target="_blank">Get SAT practice questions and videos here!</a> </p>
+                </div>
+                <div class='hello-right'>
+                    <p><a href="https://sat.magoosh.com/plans?utm_source=satblog&utm_medium=blog&utm_campaign=satplans&utm_term=signup" target="_blank">Sign up</a> or <a href="https://sat.magoosh.com/login?utm_source=satblog&utm_medium=blog&utm_campaign=satlogin&utm_term=login" target="_blank">log in</a> to Magoosh SAT Prep.</p>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+        	            <div class='wrap'>
+                <div class='navbar-branding'>
+                    <a alt='Magoosh Logo' class='navbar-brand' href="https://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=logo">
+                        <img class='logo' src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/themes/magoosh-hs-theme-master/images/magoosh-logo.png" /><noscript><img class='logo' src='https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/themes/magoosh-hs-theme-master/images/magoosh-logo.png' /></noscript>
+                    </a>
+                    <a alt='High School Blog' class='navbar-brand blog-title' href='/hs/'>
+                        High School Blog
+                    </a>
+                </div>
+
+                <div class='navbar-items'>
+                    <button class='navbar-toggle collapsed' id="search">
+                        <span><i class="fa fa-search"></i></span>
+                    </button>
+                    <ul class='nav-search'>
+                        <form class='search-box' action="https://magoosh.com/hs/" method="get" role="search">
+                            <input class="input-text" type="text" name="s" placeholder="search" value="" />
+                            <button class="green-button" type="submit">
+                                <span>
+                                    <i class="fa fa-search"></i>
+                                </span>
+                            </button>
+                        </form>
+                    </ul>
+                    <button class='navbar-toggle collapsed' id="menu">
+                        <span><i class="fa fa-bars"></i></span>
+                    </button>
+                    <ul class='nav' role='navigation'>
+                                                                                              <li class="nav-item"><a href="https://magoosh.com/hs/category/sat/">SAT <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"> </i>
+</a>
+                                                          <ul class="dropdown-menu">
+                                                                  <li class="all-posts"><a href="https://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=menu&utm_content=satprep">SAT Prep</a></li>
+                                  <hr />                                                                  <li ><a href="https://magoosh.com/hs/category/sat/">All Posts</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat-test/">The SAT Test: Everything You Need to Know</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat-practice-test/">SAT Practice Test</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat/2018/sat-test-dates-find-best-date/">SAT Test Dates</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat-or-act-quiz/">SAT or ACT Quiz</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat-study-schedules/">SAT Study Schedules</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/sat/2020/best-sat-books/">Book Reviews</a></li>
+                                                                                                    <li ><a href="https://sat.magoosh.com/questions/5897?utm_source=satblog&utm_medium=blog&utm_campaign=satquestion&utm_term=menu">Practice Questions</a></li>
+                                                                                                    <li ><a href="http://sat.magoosh.com/lessons?utm_source=satblog&utm_medium=blog&utm_campaign=satlessons&utm_term=menu">Video Lessons</a></li>
+                                                                                                    <li ><a href="https://sat.magoosh.com/flashcards/vocabulary?utm_source=satblog&utm_medium=blog&utm_campaign=satflashcards&utm_term=menu">Vocab Flashcards</a></li>
+                                                                                                </ul>
+                                                      </li>
+
+                                                  <li class="nav-item"><a href="https://magoosh.com/hs/category/act/">ACT <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"> </i>
+</a>
+                                                          <ul class="dropdown-menu">
+                                                                  <li class="all-posts"><a href="http://act.magoosh.com/?utm_source=actblog&utm_medium=blog&utm_campaign=acthome&utm_term=menu&utm_content=actprep">ACT Prep</a></li>
+                                  <hr />                                                                  <li ><a href="https://magoosh.com/hs/category/act/">All Posts</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act-test/">The ACT Test: Everything You Need to Know</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act-practice-test/">ACT Practice Test</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act-sections/">ACT Sections</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act/2020/act-test-dates/">ACT Test Dates</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act-study-schedules/">Study Schedules</a></li>
+                                                                                                    <li ><a href="https://act.magoosh.com/act-apps?utm_source=actblog&utm_medium=blog&utm_campaign=actapps&utm_term=menu">ACT Apps</a></li>
+                                                                                                    <li ><a href="https://amzn.to/2EGeK4N">ACT Prep Book</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act/2020/best-act-prep-books/">Book Reviews</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act/2015/act-ebook/">eBook</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/act-resources/">Resources</a></li>
+                                                                                                    <li ><a href="http://act.magoosh.com/lessons?utm_source=actblog&utm_medium=blog&utm_campaign=actlessons&utm_term=menu">Video Lessons</a></li>
+                                                                                                </ul>
+                                                      </li>
+
+                                                  <li class="nav-item"><a href="https://magoosh.com/hs/ap-prep/">AP Prep <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"> </i>
+</a>
+                                                          <ul class="dropdown-menu">
+                                                                  <li class="all-posts"><a href="https://magoosh.com/hs/category/ap-calculus/">AP Calculus</a></li>
+                                  <hr />                                                                  <li ><a href="https://magoosh.com/hs/category/apush/">AP US History</a></li>
+                                                                                                </ul>
+                                                      </li>
+
+                                                  <li class="nav-item"><a href="https://magoosh.com/hs/category/gen/">High School Life <i class="fa fa-caret-down" aria-hidden="true"></i><i class="fa fa-caret-up" aria-hidden="true"> </i>
+</a>
+                                                          <ul class="dropdown-menu">
+                                                                  <li class="all-posts"><a href="https://magoosh.com/hs/category/gen/">All Posts</a></li>
+                                  <hr />                                                                  <li ><a href="https://magoosh.com/hs/high-school-freshmen/">Freshmen</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/high-school-sophomores/">Sophomores</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/high-school-juniors/">Juniors</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/high-school-seniors/">Seniors</a></li>
+                                                                                                    <li ><a href="https://magoosh.com/hs/category/college-admissions/">College Admissions</a></li>
+                                                                                                </ul>
+                                                      </li>
+
+                                                  <li class="nav-item"><a href="https://schools.magoosh.com/">Educators  </i>
+</a>
+                                                      </li>
+
+                                                                  </ul>
+
+                </div>
+            </div>
+        </nav>
+    <div class="wrap">
+
+<div class='blog-loop'>
+            <article><div class='blog-post-wrap'>
+            <div class='author-avatar-wrap'>
+                <img class="author-avatar" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2096%2096'%3E%3C/svg%3E" class="avatar photo" alt="Minh Nguyen" width="96" height="96" data-lazy-src="https://magoosh.com/hs/wp-content/authors/minhnguyen-176.png" /><noscript><img class="author-avatar" src="https://magoosh.com/hs/wp-content/authors/minhnguyen-176.png" class="avatar photo" alt="Minh Nguyen" width="96" height="96" /></noscript>            </div>
+            <div class='blog-post-title'>
+                <a href="https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/"><h1 class="post-title">New SAT Math: How to Handle Complex Numbers</h1></a>
+            </div>
+            <div class='blog-post-meta'>
+                <p>BY <a href="https://magoosh.com/hs/author/minhnguyen/" title="Posts by Minh Nguyen" rel="author">Minh Nguyen</a> ON June 22, 2016, UPDATED ON November 7, 2017, IN <a href="https://magoosh.com/hs/category/sat/" rel="category tag">SAT</a></p>
+            </div>
+            <div class='blog-post-full'>
+              <div class="swp_social_panel swp_horizontal_panel swp_flat_fresh  swp_default_full_color swp_other_full_color swp_individual_full_color scale-100 scale-full_width" data-min-width="1100" data-float-color="#ffffff" data-float="none" data-float-mobile="none" data-transition="fade" data-post-id="7183" ><div class="nc_tweetContainer swp_share_button swp_facebook" data-network="facebook"><a class="nc_tweet swp_share_link" rel="nofollow noreferrer noopener" target="_blank" href="https://www.facebook.com/share.php?u=https%3A%2F%2Fmagoosh.com%2Fhs%2Fsat%2F2016%2Fnew-sat-math-complex-numbers%2F" data-link="https://www.facebook.com/share.php?u=https%3A%2F%2Fmagoosh.com%2Fhs%2Fsat%2F2016%2Fnew-sat-math-complex-numbers%2F"><span class="iconFiller"><span class="spaceManWilly"><i class="sw swp_facebook_icon"></i><span class="swp_share">Share</span></span></span><span class="swp_count">7</span></a></div><div class="nc_tweetContainer swp_share_button swp_twitter" data-network="twitter"><a class="nc_tweet swp_share_link" rel="nofollow noreferrer noopener" target="_blank" href="https://twitter.com/intent/tweet?text=New+SAT+Math%3A+How+to+Handle+Complex+Numbers&url=https%3A%2F%2Fmagoosh.com%2Fhs%2Fsat%2F2016%2Fnew-sat-math-complex-numbers%2F&via=magooshsat_act" data-link="https://twitter.com/intent/tweet?text=New+SAT+Math%3A+How+to+Handle+Complex+Numbers&url=https%3A%2F%2Fmagoosh.com%2Fhs%2Fsat%2F2016%2Fnew-sat-math-complex-numbers%2F&via=magooshsat_act"><span class="swp_count swp_hide"><span class="iconFiller"><span class="spaceManWilly"><i class="sw swp_twitter_icon"></i><span class="swp_share">Tweet</span></span></span></span></a></div><div class="nc_tweetContainer swp_share_button swp_pinterest" data-network="pinterest"><a rel="nofollow noreferrer noopener" class="nc_tweet swp_share_link noPop" onClick="var e=document.createElement('script');
+							e.setAttribute('type','text/javascript');
+							e.setAttribute('charset','UTF-8');
+							e.setAttribute('src','//assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);
+							document.body.appendChild(e);
+						" ><span class="iconFiller"><span class="spaceManWilly"><i class="sw swp_pinterest_icon"></i><span class="swp_share">Pin</span></span></span><span class="swp_count">4</span></a></div></div><p>Don&#8217;t be fooled by the name! Complex numbers are not so complicated once you figure out how to deal with them. They are sometimes called imaginary numbers and are represented by the variable letter i, which is equivalent to the square root of -1.</p>
+<p>There are only a limited amount of ways you can be tested on this topic, so cementing this knowledge in your head is a great way to win some easy points on the test. After reading this guide, you&#8217;ll be doing a fist pump each time you see a complex numbers problem on the <a href="https://magoosh.com/hs/the-redesigned-sat/">new SAT</a>.</p>
+<p><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20538'%3E%3C/svg%3E" alt="Complex Numbers -magoosh" width="500" height="538" class="aligncenter size-full wp-image-7184" data-lazy-srcset="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_.png 500w, https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_-279x300.png 279w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_.png" /><noscript><img src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_.png" alt="Complex Numbers -magoosh" width="500" height="538" class="aligncenter size-full wp-image-7184" srcset="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_.png 500w, https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2016/05/500px-Complex_number_illustration.svg_-279x300.png 279w" sizes="(max-width: 500px) 100vw, 500px" /></noscript><br />
+&nbsp;</p>
+<h2>New SAT Math: Simplifying Complex Numbers</h2>
+<p>On the test, you might see large negative numbers within a radical. If you take a glance at the answer choices and see that they are littered with i&#8217;s, chances are good that you need to simplify in order to get to the right answer.</p>
+<p><strong>For example, let&#8217;s take a look at the square root of negative 36.<br />
+</strong><br />
+In order to simplify this, use the imaginary letter i to take the negative out of the radical. Then reduce the radical down even further if possible. </p><div class='code-block code-block-12 ai-track' data-ai='WzEyLDAsIlNBVCAtIElubGluZSAtIEthcmVuIiwiIiwxXQ==' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<a target="blank" href="http://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=image&utm_content=karen"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Improve your SAT score; start your Magoosh SAT prep today" style="max-width: 100%;" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-inline-karen.png" /><noscript><img src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-inline-karen.png" alt="Improve your SAT score; start your Magoosh SAT prep today" style="max-width: 100%;" /></noscript></a></div>
+
+<p>This leaves us with 6i.<br />
+&nbsp;</p>
+<h2>New SAT Math: Simplifying Fractions With Complex Numbers</p>
+<h2>
+<p>When dealing with fractions, it is customary to make sure that you don&#8217;t leave any imaginary numbers in the denominator. If you have any stray i&#8217;s hanging there, multiply the numerator and denominator by i in order to get rid of it.</p>
+<p>If you have something more complicated in the denominator, such as 3 + 4i, then you will need to multiply the top and bottom of the fraction by something called the conjugate. Don&#8217;t worry about the name; <strong>all you have to do is take the exact same numbers and flip the sign (from addition to subtraction or vice-versa).</strong></p>
+<p>In this case, the conjugate of 3 + 4i is <strong>3 – 4i</strong>.</p>
+<h2>New SAT Math: The Powers of Complex Numbers</h2>
+<p>You will need to know how to reduce a power of i down to its simplest terms. You don&#8217;t need to memorize this chart, but it&#8217;ll help speed up the process so that you don&#8217;t have to think about it if you need it during the test.</p>
+<p><strong>i = i<br />
+i^2 = -1<br />
+i^3 = -i<br />
+i^4 = 1<br />
+i^5 = i</strong></p>
+<p>Since the pattern repeats in sets of 4, all you have to do is divide i&#8217;s power by 4 to figure out what it reduces down to. <strong>For example, if the quotient ends in .5, you know that it reduces to -1.</strong></p>
+<h2>New SAT Math: Complex Numbers on a Coordinate Plane</h2>
+<p>Plotting imaginary numbers on a complex coordinate plane is a piece of cake. The x-axis represents the real numbers while the y-axis represents the imaginary numbers.</p>
+<p>For example, (3, -4i) lies on the same position as (3, -4) on a coordinate plane. Another way of representing (3, -4i) is 3 – 4i. </p>
+<p>In order to find the magnitude (the distance from the origin to the coordinate) of a complex coordinate, <strong>simply use Pythagorean theorem to calculate the length of the diagonal side (starting from the origin).</strong> Thus, the magnitude of (3, -4i) is <strong>5.</strong></p>
+<div class="below-content-cta" style="margin-top: 20px;text-align: center;width: 100%;">
+<div align=justify><a target="blank" href="https://sat.magoosh.com/?utm_source=satblog&#038;utm_medium=blog&#038;utm_campaign=sathome&#038;utm_term=endofpost"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ready to get your highest SAT score? Start here." style="max-width: 100%;" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-endofpost-satcore.png" /><noscript><img src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-endofpost-satcore.png" alt="Ready to get your highest SAT score? Start here." style="max-width: 100%;" /></noscript></a></p>
+<h3>Popular Resources</h3>
+<ul>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat-practice-test/" target="_blank">SAT Practice Test &#8211; PDF Download</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat-study-schedules/" target="_blank">SAT Study Schedules</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat/2018/free-sat-resources-ultimate-list/" target="_blank">Free SAT Study Resources</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat/2018/sat-test-dates-find-best-date/" target="_blank">SAT Test Dates</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat/sat-resources/2018/sat-diagnostic-test/" target="_blank">SAT Diagnostic Test</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat/2017/sat-question-of-the-day/" target="_blank">SAT Question of the Day</a></li>
+<li style="text-align: left;"><a href="https://magoosh.com/hs/sat-or-act-quiz/" target="_blank">SAT vs. ACT Quiz</a></li>
+<li style="text-align: left;"><a href="https://sat.magoosh.com/lessons?utm_source=satblog&amp;utm_medium=blog&amp;utm_campaign=satlessons&amp;utm_term=popular" target="_blank">SAT Video Lessons</a></li>
+<li style="text-align: left;"><a href="https://sat.magoosh.com/questions/5897?utm_source=satblog&amp;utm_medium=blog&amp;utm_campaign=satquestion&amp;utm_term=popular" target="_blank">SAT Practice Question</a></li>
+</ul>
+</div>
+</div>
+
+<div class="zem_rp_wrap zem_rp_th_plain" id="zem_rp_first"><div class="zem_rp_content"><h3 class="related_post_title">More from Magoosh</h3><ul class="related_post zem_rp"><li data-position="0" data-poid="in-7138" data-post-type="none"><a href="https://magoosh.com/hs/sat/2016/mock-sat-tests-stage-perfect-practice-exam/" class="zem_rp_title">Mock SAT Tests: How to Stage the Perfect Practice Exam</a></li><li data-position="1" data-poid="in-6587" data-post-type="none"><a href="https://magoosh.com/hs/sat/2016/pros-cons-sat/" class="zem_rp_title">Pros and Cons of the SAT</a></li><li data-position="2" data-poid="in-6490" data-post-type="none"><a href="https://magoosh.com/hs/sat/2016/five-things-i-wish-i-knew-about-the-sat/" class="zem_rp_title">Five Things I Wish I Knew About the SAT</a></li><li data-position="3" data-poid="in-5012" data-post-type="none"><a href="https://magoosh.com/hs/act/2016/the-real-act-prep-guide-4th-edition/" class="zem_rp_title">Real ACT Prep Guide, 4th Edition Update: Official ACT Prep Guide | Book Review</a></li></ul></div></div>
+<div class="swp-content-locator"></div><!-- AI CONTENT END 1 -->
+            </div>
+            <div class='blog-post-bio'>
+              <h5>About Minh Nguyen</h5>
+              <p>Minh's passion for helping students succeed grew during his time as a career counselor at the University of California, Irvine. Now, he's helping students all over the world by spilling SAT/ACT secrets through blog posts on Magoosh. When he's not busy tutoring or writing, he enjoys playing guitar, traveling, and talking about himself in third-person.</p>
+            </div>
+            <div class='pagination'>
+              <span class='prev post-arrow'>&laquo; <a href="https://magoosh.com/hs/sat/2016/sat-reliability/" rel="prev">How Reliable is the SAT?</a></span>
+              <span class='next post-arrow'><a href="https://magoosh.com/hs/sat/2016/sat-writing-concision-style-tone/" rel="next">SAT Writing: Concision, Style, &amp; Tone</a> &raquo;</span>
+            </div>
+            <hr>
+            <div class='blog-post-reply'>
+              <!-- Required values for loading comments via ajax -->
+<input type="hidden" name="llc_ajax_url" id="llc_ajax_url" value="https://magoosh.com/hs/wp-admin/admin-ajax.php"/>
+<input type="hidden" name="llc_post_id" id="llc_post_id" value="7183"/>
+<div id="llc_comments">
+	<div style="text-align: center;">
+		<div id="llc-comments-loader" style="display: none;">
+			<!-- Filter to disable loader element if not needed -->
+							<!-- Filter to change loader element -->
+				<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" data-lazy-src="data:image/gif;base64,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"><noscript><img src="data:image/gif;base64,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"></noscript>					</div>
+		<!-- Show comments button if "On Click" option is set -->
+					<!-- Filter to modify loading button text and button class -->
+			<button id="llc_comments_button"
+			        class="btn ">Load Comments</button>
+			</div>
+</div>            </div>
+            <div class='blog-post-policy'>
+              <p><strong>Magoosh blog comment policy:</strong> To create the best experience for our readers, we will approve and respond to comments that are relevant to the article, general enough to be helpful to other students, concise, and well-written! :) If your comment was not approved, it likely did not adhere to these guidelines. If you are a Premium Magoosh student and would like more personalized service, you can use the Help tab on the Magoosh dashboard. Thanks!</p>
+            </div>
+            <hr>
+        </div>
+      </article>
+      
+  <div class='pagination-container'>
+      </div>
+</div>
+
+<div class='sidebar'>
+  <div class="sidebar-widget"><div class='code-block code-block-7 ai-track' data-ai='WzcsMCwiU0FUIC0gU2lkZWJhciAxIC0gS2FyZW4iLCIiLDFd' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
+<a target="blank" href="http://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=sidebar&utm_content=karen2"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Karen scored a 1480 on the SAT with Magoosh." style="max-width: 100%;" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-sidebar1-karen.png" /><noscript><img src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/files/2019/04/cta-sat-sidebar1-karen.png" alt="Karen scored a 1480 on the SAT with Magoosh." style="max-width: 100%;" /></noscript></a>
+
+</div>
+</div><div class="sidebar-widget"><h2 class="widget-title"><span class="qod-title">SAT Question of the Day</span></h2><div class="qod"><p>If y = (1/4)x – 5 is parallel to the line y = mx/2 + 3, what is the value of m in decimal form?</p>
+<div><a class="qod-button" href="https://sat.magoosh.com/questions/7368?utm_source=satblog&utm_medium=blog&utm_campaign=qod&utm_term=sidebar&utm_content=7368">See the answer!</a></div></div></div><div class="sidebar-widget"><div class='code-block code-block-33' style='margin: 8px 0; clear: both;'>
+<a target="blank" href="https://magoosh.com/hs/college-admissions/2020/family-guide-to-college-admissions-season/"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="family guide to college admissions" style="max-width: 100%;" data-lazy-src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/lsat/files/2020/10/cta-hs-sidebar-familyGuide.jpg" /><noscript><img src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/lsat/files/2020/10/cta-hs-sidebar-familyGuide.jpg" alt="family guide to college admissions" style="max-width: 100%;" /></noscript></a></div>
+</div><div class="widget_text sidebar-widget"><div class="textwidget custom-html-widget"><!--SAT YouTube sidebar 2a --><center><div class="rll-youtube-player" data-src="https://www.youtube.com/embed/Xu_LctW8QBo" data-id="Xu_LctW8QBo" data-query="ecver=1?controls=0&amp;mute=1&amp;showinfo=0&amp;rel=0&amp;autoplay=0&amp;loop=1"></div><noscript><iframe src="https://www.youtube.com/embed/Xu_LctW8QBo?ecver=1?controls=0&mute=1&showinfo=0&rel=0&autoplay=0&loop=1" frameborder="0" allowfullscreen></iframe></noscript></center></div></div></div>
+
+	</div><!-- end wrap -->
+	<footer class='footer'>
+            <div class='wrap'>
+                    <div class='footer-col-long'>
+                        <p class='lead'>
+                        <strong>Magoosh</strong> is a play on the Old Persian word
+                        <em>magush</em>, one who is highly learned, wise and generous.
+                        </p>
+                    </div>
+											                    <div class='footer-col'>
+												<h5>Magoosh SAT</h5>
+<p>
+  <a href="http://sat.magoosh.com/?utm_source=satblog&utm_medium=blog&utm_campaign=sathome&utm_term=footer">Home</a>
+  <br>
+  <a href="http://sat.magoosh.com/plans?utm_source=satblog&utm_medium=blog&utm_campaign=satplans&utm_term=footer">Plans &amp; Pricing</a>
+  <br>
+  <a href="http://sat.magoosh.com/login?utm_source=satblog&utm_medium=blog&utm_campaign=satlogin&utm_term=footer">Login</a>
+</p>
+	                    </div>
+											                    <div class='footer-col'>
+												<h5>Magoosh ACT</h5>
+<p>
+  <a href="https://act.magoosh.com?utm_source=actblog&utm_medium=blog&utm_campaign=acthome&utm_term=footer">Home</a>
+  <br>
+  <a href="http://act.magoosh.com/plans?utm_source=actblog&utm_medium=blog&utm_campaign=actplans&utm_term=footer">Plans &amp; Pricing</a>
+  <br>
+  <a href="http://act.magoosh.com/login?utm_source=actblog&utm_medium=blog&utm_campaign=actlogin&utm_term=footer">Login</a>
+</p>	                    </div>
+											                    <div class='footer-col-last'>
+												<h5>Company</h5>
+                        <p>
+                        <a href="https://magoosh.com/?utm_source=hsblog&utm_medium=blog&utm_campaign=HSLink&utm_term=footer" target="_blank">Company Home</a>
+                        <br>
+                        <a href="https://magoosh.com/about?utm_source=hsblog&utm_medium=Footer&utm_campaign=HSLink&utm_term=footer" target="_blank">About Us</a>
+<br>
+                        <a href="mailto:help@magoosh.com">help@magoosh.com</a>
+<br>
+</p>
+
+                        	                    </div>
+											                    <div class='footer-col'>
+												                        <h5>Follow Magoosh</h5>
+                        <p>
+                        <a href="http://www.facebook.com/MagooshSAT" target="_blank" alt="Facebook"><i class="fa fa-facebook-official"></i>&nbsp; Facebook
+                        </a><br>
+                        <a href="http://twitter.com/magooshsat_act" target="_blank" alt="Twitter"><i class="fa fa-twitter"></i>&nbsp; Twitter
+                        </a><br>
+                        <a href="http://www.youtube.com/user/MagooshSAT" target="_blank" alt="YouTube"><i class="fa fa-youtube-play"></i>&nbsp; YouTube
+                        </a><br>
+                        </p>	                    </div>
+										                    <div class='footer-col-very-long legal'>
+                    	<p>SAT<sup>®</sup> is a registered trademark of the College Board<sup>®</sup>. The College Board<sup>®</sup> does not endorse, nor is it affiliated in any way with the owner or any content of this web site. ACT<sup>®</sup> is a registered trademark of the ACT, Inc.<sup>®</sup>. The ACT Inc.<sup>®</sup> does not endorse, nor is it affiliated in any way with the owner or any content of this web site. View our <a href="https://gre.magoosh.com/privacy">privacy policy</a>.</p>
+                    </div>
+                        <div class='footer-col-last legal'>
+                            <p class='float-right'>
+                            © 2020 Magoosh
+                            </p>
+                        </div>
+                    </div>
+        </footer>
+
+	  <!-- tracking codes go here -->
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDKF3SN"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<!-- start Mixpanel 1 -->
+	<script type="text/javascript">
+	(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+	for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+
+	mixpanel.init("13ebccfb202485c7f086d7367e1aef55", {
+	  cross_subdomain_cookie: true,
+	  track_pageview: false,
+	  loaded: function(){
+	    mixpanel.identify(mixpanel.get_distinct_id());
+	    blog_view_count = (mixpanel.get_property("HS blog viewed") || 0);
+	    mixpanel.register({"HS blog viewed": (blog_view_count + 1)});
+	    mixpanel.track("Page Viewed",{host:location.hostname,path:location.pathname});
+	  }
+	});
+	</script>
+	<!-- end Mixpanel -->	
+
+	<!-- Drip -->
+	<script type="text/javascript" id="drip">
+	  // Drip site setup
+	  var _dcq = _dcq || [];
+	  var _dcs = _dcs || {};
+	  _dcs.account = '5496409';
+
+	  (function() {
+	    var dc = document.createElement('script');
+	    dc.type = 'text/javascript'; dc.async = true;
+	    dc.src = 'https://tag.getdrip.com/5496409.js';
+	    var s = document.getElementsByTagName('script')[0];
+	    s.parentNode.insertBefore(dc, s);
+	  })();
+	</script>
+	<!-- end Drip -->
+
+<!-- end tracking code -->
+                <script id="MagooshLazyLoadCommentsBetterUI-js">
+                    (function($) {
+                        var lazyLoadBetterUI = {
+                            isScrolledIntoView: function (elem) {
+                                var docViewTop = $(window).scrollTop();
+                                var docViewBottom = docViewTop + $(window).height();
+                                var elemTop = $(elem).offset().top;
+                                var elemBottom = elemTop + $(elem).height();
+
+                                return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+                            },
+                            debounce: function (func, wait, immediate) {
+                            	var timeout;
+
+                            	return function() {
+                            		var context = this, args = arguments;
+                            		var later = function() {
+                            			timeout = null;
+                            			if (!immediate) func.apply(context, args);
+                            		};
+                            		var callNow = immediate && !timeout;
+                            		clearTimeout(timeout);
+                            		timeout = setTimeout(later, wait);
+                            		if (callNow) func.apply(context, args);
+                            	};
+                            },
+                            once: function (fn, context) {
+                                var result;
+
+	                            return function() { 
+	                            	if(fn) {
+	                            		result = fn.apply(context || this, arguments);
+	                            		fn = null;
+	                            	}
+
+	                            	return result;
+	                            };
+                            },
+                            init: function (elm) {
+                                var _this = this;
+
+                                var addImageOnce = this.once(function() {
+                                    var wrap = document.createElement('div');
+                                    var img = new Image(50,50);
+
+                                    $(wrap).css('width','100%')
+                                        .css('text-align','center')
+                                        .css('margin','20px 0')
+                                        .append(img);
+                                    $(wrap).attr('id','lazyLoadButterUILoader');
+                                    img.src = "https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/magoosh-lazyload-comments-better-ui/assets/img/loading.gif";
+                                    $(elm).append(wrap);
+                                });
+
+                                var triggerCommentsOnce = this.once(function() {
+                                    var loader = $('#lazyLoadButterUILoader');
+
+                                    $('#llc_comments_button').click();
+                                    $('#llc_comments').css('display','block').append(loader);
+                                });
+
+                                var mainLogicDebounced = this.debounce(function() {
+                                    if (_this.isScrolledIntoView(elm)) {
+                                        addImageOnce();
+                                        triggerCommentsOnce();
+                                    }
+                                }, 250);
+
+                                window.addEventListener('scroll', mainLogicDebounced);
+                            }
+                        };
+
+                        $(document).ready(function() {
+                            var elm = $('#llc_comments');
+
+                            if (elm.length > 0) {
+                                lazyLoadBetterUI.init(elm);
+                            }
+                        });
+
+                    })(jQuery);
+                </script>
+            <script type='text/javascript' id='social_warfare_script-js-extra'>
+/* <![CDATA[ */
+var socialWarfare = {"addons":["pro"],"post_id":"7183","variables":{"emphasizeIcons":"0","powered_by_toggle":false,"affiliate_link":"https:\/\/warfareplugins.com"},"floatBeforeContent":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/social-warfare/assets/js/script.min.js?ver=4.1.0' id='social_warfare_script-js'></script>
+<script data-minify="1" type='text/javascript' src='https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/cache/min/13/hs/wp-content/plugins/watupro/modules/reports/js/event-tracker-4bec8af9ec16136bf132852bc11fa6d9.js' id='watupro-tracker-js'></script>
+<script type='text/javascript' id='lazy-load-for-comments-js-extra'>
+/* <![CDATA[ */
+var llcstrings = {"loading_error":"Error occurred while loading comments. Please reload this page."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/lazy-load-for-comments/public/js/llc_click.min.js?ver=1.0.10' id='lazy-load-for-comments-js'></script>
+<script type="text/javascript"> var swp_nonce = "ef3a04d20c";function parentIsEvil() { var html = null; try { var doc = top.location.pathname; } catch(err){ }; if(typeof doc === "undefined") { return true } else { return false }; }; if (parentIsEvil()) { top.location = self.location.href; };var url = "https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/";if(url.indexOf("stfi.re") != -1) { var canonical = ""; var links = document.getElementsByTagName("link"); for (var i = 0; i < links.length; i ++) { if (links[i].getAttribute("rel") === "canonical") { canonical = links[i].getAttribute("href")}}; canonical = canonical.replace("?sfr=1", "");top.location = canonical; console.log(canonical);};var swpFloatBeforeContent = false; var swp_ajax_url = "https://magoosh.com/hs/wp-admin/admin-ajax.php"; var swp_post_id = "7183";var swpClickTracking = false; swpPinIt={"enabled":false}; document.addEventListener("DOMContentLoaded", function() { var swpButtonsExist = document.getElementsByClassName( "swp_social_panel" ).length > 0; if (swpButtonsExist) { swp_admin_ajax = "https://magoosh.com/hs/wp-admin/admin-ajax.php"; swp_post_id=7183; swp_post_url= "https://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/"; swp_post_recovery_url = "http://magoosh.com/hs/sat/2016/new-sat-math-complex-numbers/"; socialWarfare.fetchFacebookShares(); } }); </script><script>
+/* <![CDATA[ */
+ai_front = {"insertion_before":"BEFORE","insertion_after":"AFTER","insertion_prepend":"PREPEND CONTENT","insertion_append":"APPEND CONTENT","insertion_replace_content":"REPLACE CONTENT","insertion_replace_element":"REPLACE ELEMENT","visible":"VISIBLE","hidden":"HIDDEN","fallback":"FALLBACK","automatically_placed":"Automatically placed by AdSense Auto ads code","cancel":"Cancel","use":"Use","add":"Add","parent":"Parent","cancel_element_selection":"Cancel element selection","select_parent_element":"Select parent element","css_selector":"CSS selector","use_current_selector":"Use current selector","element":"ELEMENT","path":"PATH","selector":"SELECTOR"};
+/* ]]> */
+function b2a(a){var b,c=0,l=0,f="",g=[];if(!a)return a;do{var e=a.charCodeAt(c++);var h=a.charCodeAt(c++);var k=a.charCodeAt(c++);var d=e<<16|h<<8|k;e=63&d>>18;h=63&d>>12;k=63&d>>6;d&=63;g[l++]="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(e)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(h)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(k)+"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".charAt(d)}while(c<
+a.length);return f=g.join(""),b=a.length%3,(b?f.slice(0,b-3):f)+"===".slice(b||3)}function a2b(a){var b,c,l,f={},g=0,e=0,h="",k=String.fromCharCode,d=a.length;for(b=0;64>b;b++)f["ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".charAt(b)]=b;for(c=0;d>c;c++)for(b=f[a.charAt(c)],g=(g<<6)+b,e+=6;8<=e;)((l=255&g>>>(e-=8))||d-2>c)&&(h+=k(l));return h}b64e=function(a){return btoa(encodeURIComponent(a).replace(/%([0-9A-F]{2})/g,function(b,a){return String.fromCharCode("0x"+a)}))};
+b64d=function(a){return decodeURIComponent(atob(a).split("").map(function(a){return"%"+("00"+a.charCodeAt(0).toString(16)).slice(-2)}).join(""))};
+function ai_run_scripts(){jQuery(document).ready(function(m){var d=function(c){var d=0,h=15,k=c(document).width();c(".ai-sticky-widget").each(function(){for(var b=c(this),l=b.width(),e=!1,a=b.parent();"BODY"!=a.prop("tagName");){if(a.hasClass("theiaStickySidebar")){e=!0;break}var f=a.parent(),g=f.width();if(g>1.2*l||g>k/2)break;a=f}e||(b=a.offset().top-b.offset().top+h,0==d?("sticky"!=a.css("position")||isNaN(parseInt(a.css("top")))||a.css("top")<b)&&a.css("position",
+"sticky").css("position","-webkit-sticky").css("top",b):a.theiaStickySidebar({additionalMarginTop:b,sidebarBehavior:"stick-to-top"}))})};"undefined"==typeof ai_sticky_sidebar_delay&&(ai_sticky_sidebar_delay=20);setTimeout(function(){d(jQuery)},ai_sticky_sidebar_delay)});
+var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.arrayIteratorImpl=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}};$jscomp.arrayIterator=function(a){return{next:$jscomp.arrayIteratorImpl(a)}};$jscomp.makeIterator=function(a){var b="undefined"!=typeof Symbol&&Symbol.iterator&&a[Symbol.iterator];return b?b.call(a):$jscomp.arrayIterator(a)};
+(function(a){if("function"===typeof define&&define.amd){define(a);var b=!0}"object"===typeof exports&&(module.exports=a(),b=!0);if(!b){var f=window.Cookies,c=window.Cookies=a();c.noConflict=function(){window.Cookies=f;return c}}})(function(){function a(){for(var a=0,c={};a<arguments.length;a++){var b=arguments[a],e;for(e in b)c[e]=b[e]}return c}function b(f){function c(){}function d(b,e,d){if("undefined"!==typeof document){d=a({path:"/"},c.defaults,d);"number"===typeof d.expires&&(d.expires=new Date(1*
+new Date+864E5*d.expires));d.expires=d.expires?d.expires.toUTCString():"";try{var g=JSON.stringify(e);/^[\{\[]/.test(g)&&(e=g)}catch(n){}e=f.write?f.write(e,b):encodeURIComponent(String(e)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent);b=encodeURIComponent(String(b)).replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent).replace(/[\(\)]/g,escape);g="";for(var k in d)d[k]&&(g+="; "+k,!0!==d[k]&&(g+="="+d[k].split(";")[0]));return document.cookie=b+"="+e+g}}
+function e(a,b){if("undefined"!==typeof document){for(var c={},e=document.cookie?document.cookie.split("; "):[],d=0;d<e.length;d++){var g=e[d].split("="),h=g.slice(1).join("=");b||'"'!==h.charAt(0)||(h=h.slice(1,-1));try{var l=g[0].replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);h=(f.read||f)(h,l)||h.replace(/(%[0-9A-Z]{2})+/g,decodeURIComponent);if(b)try{h=JSON.parse(h)}catch(m){}c[l]=h;if(a===l)break}catch(m){}}return a?c[a]:c}}c.set=d;c.get=function(a){return e(a,!1)};c.getJSON=function(a){return e(a,
+!0)};c.remove=function(b,c){d(b,"",a(c,{expires:-1}))};c.defaults={};c.withConverter=b;return c}return b(function(){})});AiCookies=Cookies.noConflict();
+ai_check_block=function(a){if(null==a)return!0;var b=AiCookies.getJSON("aiBLOCKS");ai_debug_cookie_status="";null==b&&(b={});"undefined"!==typeof ai_delay_showing_pageviews&&(b.hasOwnProperty(a)||(b[a]={}),b[a].hasOwnProperty("d")||(b[a].d=ai_delay_showing_pageviews));if(b.hasOwnProperty(a))for(var f in b[a]){if("x"==f){var c="",d=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in d.dataset&&(c=d.dataset.aiHash);d="";b[a].hasOwnProperty("h")&&(d=b[a].h);var e=new Date;e=b[a][f]-
+Math.round(e.getTime()/1E3);if(0<e&&d==c)return ai_debug_cookie_status=a="closed for "+e+" s = "+Math.round(1E4*e/3600/24)/1E4+" days",!1;ai_set_cookie(a,"x","");b[a].hasOwnProperty("i")||b[a].hasOwnProperty("c")||ai_set_cookie(a,"h","")}else if("d"==f){if(0!=b[a][f])return ai_debug_cookie_status=a="delayed for "+b[a][f]+" pageviews",!1}else if("i"==f){c="";d=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in d.dataset&&(c=d.dataset.aiHash);d="";b[a].hasOwnProperty("h")&&(d=b[a].h);
+if(0==b[a][f]&&d==c)return ai_debug_cookie_status=a="max impressions reached",!1;if(0>b[a][f]&&d==c){e=new Date;e=-b[a][f]-Math.round(e.getTime()/1E3);if(0<e)return ai_debug_cookie_status=a="max imp. reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;ai_set_cookie(a,"i","");b[a].hasOwnProperty("c")||b[a].hasOwnProperty("x")||ai_set_cookie(a,"h","")}}if("ipt"==f&&0==b[a][f]&&(e=new Date,c=Math.round(e.getTime()/1E3),e=b[a].it-c,0<e))return ai_debug_cookie_status=a="max imp. per time reached ("+
+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;if("c"==f){c="";d=document.querySelectorAll('span[data-ai-block="'+a+'"]')[0];"aiHash"in d.dataset&&(c=d.dataset.aiHash);d="";b[a].hasOwnProperty("h")&&(d=b[a].h);if(0==b[a][f]&&d==c)return ai_debug_cookie_status=a="max clicks reached",!1;if(0>b[a][f]&&d==c){e=new Date;e=-b[a][f]-Math.round(e.getTime()/1E3);if(0<e)return ai_debug_cookie_status=a="max clicks reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1;ai_set_cookie(a,"c","");b[a].hasOwnProperty("i")||
+b[a].hasOwnProperty("x")||ai_set_cookie(a,"h","")}}if("cpt"==f&&0==b[a][f]&&(e=new Date,c=Math.round(e.getTime()/1E3),e=b[a].ct-c,0<e))return ai_debug_cookie_status=a="max clicks per time reached ("+Math.round(1E4*e/24/3600)/1E4+" days = "+e+" s)",!1}ai_debug_cookie_status="OK";return!0};
+ai_check_and_insert_block=function(a,b){if(null==a)return!0;var f=document.getElementsByClassName(b);if(f.length){f=f[0];var c=f.closest(".code-block");if(ai_check_block(a))ai_insert_code(f),c&&(c.classList.remove("ai-list-block"),c.style.visibility="",c.classList.contains("ai-remove-position")&&(c.style.position=""));else{var d=f.closest("div[data-ai]");if(null!=d&&"undefined"!=typeof d.getAttribute("data-ai")){var e=JSON.parse(b64d(d.getAttribute("data-ai")));"undefined"!==typeof e&&
+e.constructor===Array&&(e[1]="",d.setAttribute("data-ai",b64e(JSON.stringify(e))))}d=c.querySelectorAll(".ai-debug-block");c&&d.length&&(c.classList.remove("ai-list-block"),c.style.visibility="",c.classList.contains("ai-remove-position")&&(c.style.position=""))}f.classList.remove(b)}f=document.querySelectorAll("."+b+"-dbg");f=$jscomp.makeIterator(f);for(c=f.next();!c.done;c=f.next())c=c.value,c.querySelector(".ai-status").textContent=ai_debug_cookie_status,c.querySelector(".ai-cookie-data").textContent=
+ai_get_cookie_text(a),c.classList.remove(b+"-dbg")};function ai_load_cookie(){var a=AiCookies.getJSON("aiBLOCKS");null==a&&(a={});return a}function ai_get_cookie(a,b){var f="",c=ai_load_cookie();c.hasOwnProperty(a)&&c[a].hasOwnProperty(b)&&(f=c[a][b]);return f}
+function ai_set_cookie(a,b,f){var c=ai_load_cookie();if(""===f){if(c.hasOwnProperty(a)){delete c[a][b];a:{b=c[a];for(d in b)if(b.hasOwnProperty(d)){var d=!1;break a}d=!0}d&&delete c[a]}}else c.hasOwnProperty(a)||(c[a]={}),c[a][b]=f;0===Object.keys(c).length&&c.constructor===Object?AiCookies.remove("aiBLOCKS"):AiCookies.set("aiBLOCKS",c,{expires:365,path:"/"});return c}
+ai_get_cookie_text=function(a){var b=AiCookies.getJSON("aiBLOCKS");null==b&&(b={});return b.hasOwnProperty(a)?JSON.stringify(b[a]).replace(/"/g,"").replace("{","").replace("}",""):""};
+(function(d,h){"function"===typeof define&&define.amd?define(["jquery"],function(n){return h(n)}):"object"===typeof module&&module.exports?module.exports=h(require("jquery")):h(d.jQuery)})(this,function(d){(function(h){h.fn.iframeTracker=function(n){"function"==typeof n&&(n={blurCallback:n});var l=this.get();if(null===n||!1===n)h.iframeTracker.untrack(l);else if("object"==typeof n)h.iframeTracker.track(l,n);else throw Error("Wrong handler type (must be an object, or null|false to untrack)");return this};
+h.iframeTracker={focusRetriever:null,focusRetrieved:!1,handlersList:[],isIE8AndOlder:!1,init:function(){try{!0===h.browser.msie&&9>h.browser.version&&(this.isIE8AndOlder=!0)}catch(l){try{9>navigator.userAgent.match(/(msie) ([\w.]+)/i)[2]&&(this.isIE8AndOlder=!0)}catch(w){}}h(window).focus();h(window).blur(function(l){h.iframeTracker.windowLoseFocus(l)});h("body").append('<div style="position:fixed; top:0; left:0; overflow:hidden;"><input style="position:absolute; left:-300px;" type="text" value="" id="focus_retriever" readonly="true" /></div>');
+this.focusRetriever=h("#focus_retriever");this.focusRetrieved=!1;var n=this;h(document).mousemove(function(l){!document.activeElement||"IFRAME"!==document.activeElement.tagName||document.activeElement.hasAttribute("id")&&0===h(document.activeElement).attr("id").indexOf("dsq-")||(h.iframeTracker.focusRetriever.focus(),h.iframeTracker.focusRetrieved=!0);if(document.activeElement&&"A"==document.activeElement.tagName)for(var w in n.handlersList)try{n.handlersList[w].focusCallback(document.activeElement)}catch(y){}});
+if(this.isIE8AndOlder){this.focusRetriever.blur(function(l){l.stopPropagation();l.preventDefault();h.iframeTracker.windowLoseFocus(l)});h("body").click(function(l){h(window).focus()});h("form").click(function(l){l.stopPropagation()});try{h("body").on("click","form",function(l){l.stopPropagation()})}catch(l){console.log("[iframeTracker] Please update jQuery to 1.7 or newer. (exception: "+l.message+")")}}},track:function(n,l){l.target=n;h.iframeTracker.handlersList.push(l);h(n).bind("mouseover",{handler:l},
+h.iframeTracker.mouseoverListener).bind("mouseout",{handler:l},h.iframeTracker.mouseoutListener)},untrack:function(n){if("function"!=typeof Array.prototype.filter)console.log("Your browser doesn't support Array filter, untrack disabled");else{h(n).each(function(x){h(this).unbind("mouseover",h.iframeTracker.mouseoverListener).unbind("mouseout",h.iframeTracker.mouseoutListener)});var l=function(x){return null===x?!1:!0},w;for(w in this.handlersList){for(var y in this.handlersList[w].target)-1!==h.inArray(this.handlersList[w].target[y],
+n)&&(this.handlersList[w].target[y]=null);this.handlersList[w].target=this.handlersList[w].target.filter(l);0===this.handlersList[w].target.length&&(this.handlersList[w]=null)}this.handlersList=this.handlersList.filter(l)}},mouseoverListener:function(n){n.data.handler.over=!0;try{n.data.handler.overCallback(this,n)}catch(l){}},mouseoutListener:function(n){n.data.handler.over=!1;h.iframeTracker.focusRetriever.focus();try{n.data.handler.outCallback(this,n)}catch(l){}},windowLoseFocus:function(n){for(var l in this.handlersList)if(!0===
+this.handlersList[l].over)try{this.handlersList[l].blurCallback(n)}catch(w){}}};h(document).ready(function(){h.iframeTracker.init()})})(d)});ai_tracking_finished=!1;
+jQuery(document).ready(function(d){function h(b,m,f,a,c,q,g){b=b.replace("[EVENT]",m);b=b.replace("[BLOCK_NUMBER]",f);b=b.replace("[BLOCK_NAME]",a);b=b.replace("[BLOCK_COUNTER]",c);b=b.replace("[VERSION_NUMBER]",q);b=b.replace("[VERSION_NAME]",g);b=b.replace("[BLOCK_VERSION_NUMBER]",f+(0==q?"":" - "+q));return b=b.replace("[BLOCK_VERSION_NAME]",a+(""==g?"":" - "+g))}function n(b,m,f,a,c,q,g){var e=h("Ad Inserter Pro",b,m,f,a,c,q),p=h("[EVENT]",b,m,f,a,c,q),k=h("[BLOCK_NUMBER] - [BLOCK_VERSION_NAME]",b,m,f,a,c,q);if("function"!=
+typeof ai_external_tracking_event||0!=ai_external_tracking_event({event:b,block:m,block_name:f,block_counter:a,version:c,version_name:q},e,p,k,g))"function"==typeof window.ga?(b="send","string"==typeof ai_ga_tracker_name?b=ai_ga_tracker_name+"."+b:(m=ga.getAll()[0].get("name"),"t0"!=m&&(b=m+"."+b)),ga(b,"event",{eventCategory:e,eventAction:p,eventLabel:k,nonInteraction:g})):"function"==typeof window.gtag?gtag("event","impression",{event_category:e,event_action:p,event_label:k,non_interaction:g}):
+"function"==typeof window.__gaTracker?__gaTracker("send","event",{eventCategory:e,eventAction:p,eventLabel:k,nonInteraction:g}):"object"==typeof _gaq&&_gaq.push(["_trackEvent",e,p,k,void 0,g]),"object"==typeof _paq&&_paq.push(["trackEvent",e,p,k])}function l(b,m){var f=b[0],a=b[1];if(Number.isInteger(a))if("undefined"==typeof ai_check_data&&"undefined"==typeof ai_check_data_timeout)ai_check_data_timeout=!0,setTimeout(function(){l(b,m)},2500);else{ai_cookie=ai_load_cookie();for(var c in ai_cookie)if(parseInt(f)==
+parseInt(c))for(var q in ai_cookie[c])if("c"==q){var g=ai_cookie[c][q];if(0<g)if(ai_set_cookie(c,"c",g-1),1==g){g=d("span[data-ai-block="+f+"]").data("ai-cfp-time");var e=new Date;e=Math.round(e.getTime()/1E3);var p=e+604800;ai_set_cookie(c,"c",-p);setTimeout(function(){d("span[data-ai-block="+f+"]").closest("div[data-ai]").remove()},50);"undefined"!=typeof g&&(p=e+86400*g,ai_set_cookie(f,"x",p),d("span.ai-cfp").each(function(t){t=d(this).data("ai-block");var u=d(this);setTimeout(function(){u.closest("div[data-ai]").remove()},
+50);ai_set_cookie(t,"x",p)}))}else ai_set_cookie(c,"c",g-1)}else if("cpt"==q)if(g=ai_cookie[c][q],0<g){if(ai_set_cookie(c,"cpt",g-1),1==g){g=d("span[data-ai-block="+f+"]").data("ai-cfp-time");e=new Date;e=Math.round(e.getTime()/1E3);var k=d(this);setTimeout(function(){k.closest("div[data-ai]").remove()},50);"undefined"!=typeof g&&(p=e+86400*g,ai_set_cookie(f,"x",p),d("span.ai-cfp").each(function(t){t=d(this).data("ai-block");var u=d(this);setTimeout(function(){u.closest("div[data-ai]").remove()},
+50);ai_set_cookie(t,"x",p)}))}}else ai_check_data.hasOwnProperty(c)&&ai_check_data[c].hasOwnProperty("cpt")&&ai_check_data[c].hasOwnProperty("ct")?ai_cookie.hasOwnProperty(c)&&ai_cookie[c].hasOwnProperty("ct")&&(e=new Date,0>=ai_cookie[c].ct-Math.round(e.getTime()/1E3)&&(e=Math.round(e.getTime()/1E3),ai_set_cookie(c,"cpt",ai_check_data[c].cpt-1),ai_set_cookie(c,"ct",Math.round(e+86400*ai_check_data[c].ct)))):(ai_cookie.hasOwnProperty(c)&&ai_cookie[c].hasOwnProperty("cpt")&&ai_set_cookie(c,"cpt",""),
+ai_cookie.hasOwnProperty(c)&&ai_cookie[c].hasOwnProperty("ct")&&ai_set_cookie(c,"ct",""));x&&d.ajax({url:"/hs/wp-admin/admin-ajax.php",type:"post",data:{action:"ai_ajax",ai_check:"34eef7baf7",click:f,version:a,type:m},async:!0}).done(function(t){});if(B){var v=b[2],r=b[3];n("click",f,v,b[4],a,r,!1)}"function"==typeof ai_click_action&&ai_click_action(f,v,a,r)}}function w(){ai_check_data={};if("undefined"==typeof ai_iframe){ai_cookie=ai_load_cookie();d(".ai-check-block").each(function(){var a=
+d(this).data("ai-block"),c=d(this).data("ai-delay-pv"),q=d(this).data("ai-every-pv"),g=d(this).data("ai-hash"),e=d(this).data("ai-max-imp"),p=d(this).data("ai-limit-imp-per-time"),k=d(this).data("ai-limit-imp-time"),v=d(this).data("ai-max-clicks"),r=d(this).data("ai-limit-clicks-per-time"),t=d(this).data("ai-limit-clicks-time");if("undefined"!=typeof c&&0<c){ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={});ai_check_data[a].d=c;var u="";ai_cookie.hasOwnProperty(a)&&ai_cookie[a].hasOwnProperty("d")&&
+(u=ai_cookie[a].d);""===u&&ai_set_cookie(a,"d",c-1)}"undefined"!=typeof q&&2<=q&&(ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={}),"undefined"!==typeof ai_delay_showing_pageviews||ai_cookie.hasOwnProperty(a)&&ai_cookie[a].hasOwnProperty("d")||(ai_cookie.hasOwnProperty(a)||(ai_cookie[a]={}),ai_cookie[a].d=0),ai_check_data[a].e=q);if("undefined"!=typeof e&&0<e){if(ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={}),ai_check_data[a].i=e,ai_check_data[a].h=g,q=c="",ai_cookie.hasOwnProperty(a)&&
+(ai_cookie[a].hasOwnProperty("i")&&(q=ai_cookie[a].i),ai_cookie[a].hasOwnProperty("h")&&(c=ai_cookie[a].h)),""===q||c!=g)ai_set_cookie(a,"i",e),ai_set_cookie(a,"h",g)}else ai_cookie.hasOwnProperty(a)&&ai_cookie[a].hasOwnProperty("i")&&(ai_set_cookie(a,"i",""),ai_cookie[a].hasOwnProperty("c")||ai_cookie[a].hasOwnProperty("x")||ai_set_cookie(a,"h",""));if("undefined"!=typeof p&&0<p&&"undefined"!=typeof k&&0<k){ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={});ai_check_data[a].ipt=p;ai_check_data[a].it=
+k;e=c="";ai_cookie.hasOwnProperty(a)&&(ai_cookie[a].hasOwnProperty("ipt")&&(c=ai_cookie[a].ipt),ai_cookie[a].hasOwnProperty("it")&&(e=ai_cookie[a].it));if(""===c||""===e)ai_set_cookie(a,"ipt",p),c=new Date,c=Math.round(c.getTime()/1E3),ai_set_cookie(a,"it",Math.round(c+86400*k));0<e&&(c=new Date,c=Math.round(c.getTime()/1E3),e<=c&&(ai_set_cookie(a,"ipt",p),ai_set_cookie(a,"it",Math.round(c+86400*k))))}else ai_cookie.hasOwnProperty(a)&&(ai_cookie[a].hasOwnProperty("ipt")&&ai_set_cookie(a,"ipt",""),
+ai_cookie[a].hasOwnProperty("it")&&ai_set_cookie(a,"it",""));if("undefined"!=typeof v&&0<v){if(ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={}),ai_check_data[a].c=v,ai_check_data[a].h=g,p=c="",ai_cookie.hasOwnProperty(a)&&(ai_cookie[a].hasOwnProperty("c")&&(p=ai_cookie[a].c),ai_cookie[a].hasOwnProperty("h")&&(c=ai_cookie[a].h)),""===p||c!=g)ai_set_cookie(a,"c",v),ai_set_cookie(a,"h",g)}else ai_cookie.hasOwnProperty(a)&&ai_cookie[a].hasOwnProperty("c")&&(ai_set_cookie(a,"c",""),ai_cookie[a].hasOwnProperty("i")||
+ai_cookie[a].hasOwnProperty("x")||ai_set_cookie(a,"h",""));if("undefined"!=typeof r&&0<r&&"undefined"!=typeof t&&0<t){ai_check_data.hasOwnProperty(a)||(ai_check_data[a]={});ai_check_data[a].cpt=r;ai_check_data[a].ct=t;g=v="";ai_cookie.hasOwnProperty(a)&&(ai_cookie[a].hasOwnProperty("cpt")&&(v=ai_cookie[a].cpt),ai_cookie[a].hasOwnProperty("ct")&&(g=ai_cookie[a].ct));if(""===v||""===g)ai_set_cookie(a,"cpt",r),c=new Date,c=Math.round(c.getTime()/1E3),ai_set_cookie(a,"ct",Math.round(c+86400*t));0<g&&
+(c=new Date,c=Math.round(c.getTime()/1E3),g<=c&&(ai_set_cookie(a,"cpt",r),ai_set_cookie(a,"ct",Math.round(c+86400*t))))}else ai_cookie.hasOwnProperty(a)&&(ai_cookie[a].hasOwnProperty("cpt")&&ai_set_cookie(a,"cpt",""),ai_cookie[a].hasOwnProperty("ct")&&ai_set_cookie(a,"ct",""))});for(var b in ai_cookie)for(var m in ai_cookie[b])if("d"==m){var f=ai_cookie[b][m];0<f?ai_set_cookie(b,"d",f-1):ai_check_data.hasOwnProperty(b)&&ai_check_data[b].hasOwnProperty("e")?ai_set_cookie(b,"d",ai_check_data[b].e-1):
+ai_check_data.hasOwnProperty(b)&&ai_check_data[b].hasOwnProperty("d")||ai_set_cookie(b,"d","")}}}function y(){if(D){var b=document.documentElement.clientWidth,m=window.innerWidth,f=b<m?m:b,a=0;d.each(E,function(q,g){if(f>=g)return a=F[q],!1});b=jQuery(b64d("Ym9keQ==")).attr(b64d ('ZGF0YS1kYXRhLW1hc2s='));if("string"===typeof b)var c=b==b64d("bWFzaw==");"string"===typeof b&&"boolean"===typeof c&&c&&(B&&n("ad blocking",0,G[a-1],0,0,"",!0),a|=128);x&&d.ajax({url:"/hs/wp-admin/admin-ajax.php",type:"post",
+data:{action:"ai_ajax",ai_check:"34eef7baf7",views:[0],versions:[a]},async:!0}).done(function(q){})}w();ai_tracking_finished=!0;ai_process_impressions()}var x=1,B=0,D=1,C=0,E=[980,768,0],F=[1,2,3],G=JSON.parse(b64d("WyJEZXNrdG9wIiwiVGFibGV0IiwiUGhvbmUiXQ=="));Number.isInteger=Number.isInteger||function(b){return"number"===typeof b&&isFinite(b)&&Math.floor(b)===b};ai_install_standard_click_trackers=function(b){"undefined"==
+typeof b&&(b=d("body"));b=d("div.ai-track[data-ai]:visible a",b);var m=d();b.each(function(){var f=d(this).find("div.ai-lazy"),a=d(this).find("div.ai-manual");0==f.length&&0==a.length&&(m=m.add(d(this)))});b=m;b.removeClass("ai-track");0!=b.length&&(C?b.click(function(){for(var f=d(this).closest("div[data-ai]");"undefined"!=typeof f.attr("data-ai");){var a=JSON.parse(b64d(f.attr("data-ai")));"undefined"!==typeof a&&a.constructor===Array&&Number.isInteger(a[1])&&!f.hasClass("clicked")&&(f.addClass("clicked"),
+l(a,"a.click"));f=f.parent().closest("div[data-ai]")}}):b.click(function(){for(var f=d(this).closest("div[data-ai]");"undefined"!=typeof f.attr("data-ai");){var a=JSON.parse(b64d(f.attr("data-ai")));"undefined"!==typeof a&&a.constructor===Array&&Number.isInteger(a[1])&&(l(a,"a.click"),clicked=!0);f=f.parent().closest("div[data-ai]")}}))};ai_install_click_trackers=function(b){"undefined"==typeof b&&(b=d("body"));if(C){var m=d("div.ai-track[data-ai]:visible, div.ai-rotate[data-info]:visible div.ai-track[data-ai]",
+b);"undefined"!=typeof d(b).attr("data-ai")&&d(b).hasClass("ai-track")&&d(b).is(":visible")&&(m=m.add(b));var f=d();m.each(function(){var a=d(this).find("div.ai-lazy"),c=d(this).find("div.ai-manual");0==a.length&&0==c.length&&(f=f.add(d(this)))});m=f;m.removeClass("ai-track");0!=m.length&&m.iframeTracker({blurCallback:function(){if(null!=this.ai_data&&null!=wrapper&&!wrapper.hasClass("clicked")){wrapper.addClass("clicked");l(this.ai_data,"blurCallback");for(var a=wrapper.find("div[data-ai]:visible");"undefined"!=
+typeof a.attr("data-ai");){var c=JSON.parse(b64d(a.attr("data-ai")));"undefined"!==typeof c&&c.constructor===Array&&Number.isInteger(c[1])&&l(c,"blurCallback INNER");a=a.find("div[data-ai]:visible")}}},overCallback:function(a){a=d(a).closest("div[data-ai]");if("undefined"!=typeof a.attr("data-ai")){var c=JSON.parse(b64d(a.attr("data-ai")));"undefined"!==typeof c&&c.constructor===Array&&Number.isInteger(c[1])?(wrapper=a,this.ai_data=c):(null!=wrapper&&wrapper.removeClass("clicked"),this.ai_data=wrapper=
+null)}},outCallback:function(a){null!=wrapper&&wrapper.removeClass("clicked");this.ai_data=wrapper=null},focusCallback:function(a){if(null!=this.ai_data&&null!=wrapper&&!wrapper.hasClass("clicked"))for(wrapper.addClass("clicked"),l(this.ai_data,"focusCallback"),a=wrapper.find("div[data-ai]:visible");"undefined"!=typeof a.attr("data-ai");){var c=JSON.parse(b64d(a.attr("data-ai")));"undefined"!==typeof c&&c.constructor===Array&&Number.isInteger(c[1])&&l(c,"focusCallback INNER");a=a.find("div[data-ai]:visible")}},
+wrapper:null,ai_data:null,block:null,version:null})}ai_install_standard_click_trackers(b)};ai_process_impressions=function(b){"undefined"==typeof b&&(b=d("body"));var m=[],f=[],a=[],c=[],q=[],g=d("div.ai-track[data-ai]:visible, div.ai-rotate[data-info]:visible div.ai-track[data-ai]",b);"undefined"!=typeof d(b).attr("data-ai")&&d(b).hasClass("ai-track")&&d(b).is(":visible")&&(g=g.add(b));0!=g.length&&d(g).each(function(){if("undefined"!=typeof d(this).attr("data-ai")){var k=JSON.parse(b64d(d(this).attr("data-ai")));
+if("undefined"!==typeof k&&k.constructor===Array){var v=0,r=d(this).find("div.ai-rotate[data-info]");1==r.length&&(v=JSON.parse(b64d(r.data("info")))[1]);if(Number.isInteger(k[0])&&0!=k[0]&&Number.isInteger(k[1])){r=0;var t=d(this).hasClass("ai-no-tracking"),u=jQuery(b64d("Ym9keQ==")).attr(b64d ('ZGF0YS1kYXRhLW1hc2s='));if("string"===typeof u)var A=u==b64d("bWFzaw==");if("string"===typeof u&&"boolean"===typeof A){var z=d(this).outerHeight();u=d(this).find(".ai-attributes");u.length&&u.each(function(){z>=d(this).outerHeight()&&
+(z-=d(this).outerHeight())});u=d(this).find(".ai-code");u.length&&(z=0,u.each(function(){z+=d(this).outerHeight()}));A&&0===z&&(r=128)}A=d(this).find("div.ai-lazy");u=d(this).find("div.ai-manual");if(0!=A.length||0!=u.length)t=!0;if(!t)if(0==v)m.push(k[0]),f.push(k[1]|r),a.push(k[2]),c.push(k[3]),q.push(k[4]);else for(t=1;t<=v;t++)m.push(k[0]),f.push(t|r),a.push(k[2]),c.push(k[3]),q.push(k[4])}}}});ai_cookie=ai_load_cookie();for(var e in ai_cookie)if(m.includes(parseInt(e)))for(var p in ai_cookie[e])"i"==
+p?(b=ai_cookie[e][p],0<b&&(1==b?(b=new Date,b=Math.round(b.getTime()/1E3)+604800,ai_set_cookie(e,"i",-b)):ai_set_cookie(e,"i",b-1))):"ipt"==p&&(b=ai_cookie[e][p],0<b?ai_set_cookie(e,"ipt",b-1):ai_check_data.hasOwnProperty(e)&&ai_check_data[e].hasOwnProperty("ipt")&&ai_check_data[e].hasOwnProperty("it")?ai_cookie.hasOwnProperty(e)&&ai_cookie[e].hasOwnProperty("it")&&(b=new Date,0>=ai_cookie[e].it-Math.round(b.getTime()/1E3)&&(b=Math.round(b.getTime()/1E3),ai_set_cookie(e,"ipt",ai_check_data[e].ipt),
+ai_set_cookie(e,"it",Math.round(b+86400*ai_check_data[e].it)))):(ai_cookie.hasOwnProperty(e)&&ai_cookie[e].hasOwnProperty("ipt")&&ai_set_cookie(e,"ipt",""),ai_cookie.hasOwnProperty(e)&&ai_cookie[e].hasOwnProperty("it")&&ai_set_cookie(e,"it","")));if(m.length&&(x&&d.ajax({url:"/hs/wp-admin/admin-ajax.php",type:"post",data:{action:"ai_ajax",ai_check:"34eef7baf7",views:m,versions:f},async:!0}).done(function(k){k=k.trim();if(""!=k&&(k=JSON.parse(k),"undefined"!=typeof k["#"])){var v=Math.round((new Date).getTime()/
+1E3)+43200,r;for(r in k["#"])ai_cookie.hasOwnProperty(k["#"][r])&&ai_cookie[k["#"][r]].hasOwnProperty("x")||ai_set_cookie(k["#"][r],"x",v)}}),B))for(e=0;e<m.length;e++)n("impression",m[e],a[e],q[e],f[e],c[e],!0)};jQuery(window).on("load",function(){setTimeout(y,1200);setTimeout(ai_install_click_trackers,1300)})});
+
+ai_js_code = true;
+}
+function ai_wait_for_jquery(){function b(b,c){var a=document.createElement("script");a.src=b;var d=document.getElementsByTagName("head")[0],e=!1;a.onload=a.onreadystatechange=function(){e||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(e=!0,c&&c(),a.onload=a.onreadystatechange=null,d.removeChild(a))};d.appendChild(a)}window.jQuery?ai_run_scripts():(ai_jquery_waiting_counter++,4==ai_jquery_waiting_counter&&b("https://magoosh.com/hs/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp",function(){b("https://magoosh.com/hs/wp-includes/js/jquery/jquery-migrate.min.js?ver=5.5.3",null)}),30>ai_jquery_waiting_counter&&
+setTimeout(function(){ai_wait_for_jquery()},50))}ai_jquery_waiting_counter=0;ai_wait_for_jquery();
+
+</script>
+<script>window.lazyLoadOptions={elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){return}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){return}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://2aih25gkk2pi65s8wfa8kzvi-wpengine.netdna-ssl.com/hs/wp-content/plugins/wp-rocket/assets/js/lazyload/16.1/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img loading="lazy" data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<div class="play"></div>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.dataset.query.length?'':'&'+this.dataset.query;e.setAttribute("src",t.replace("ID",this.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.replaceChild(e,this)}document.addEventListener("DOMContentLoaded",function(){var e,t,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),e.onclick=lazyLoadYoutubeIframe,a[t].appendChild(e)});</script>
+			            
+    </body>
+
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
