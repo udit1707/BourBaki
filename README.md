@@ -20,6 +20,7 @@ Expressions,algebra, functional and trigonometric equations,inequalities,calculu
 # BOURBAKI
 
 Bourbaki is a mathematical app that processes handwritten texts and solves them correctly to give the right answer.Bourbaki also provides a platform that connects students with freelancing tutors and helps the student solve their vexing doubts. And just like the works of Nicolas Bourbaki, this app also brings together several mathematical domains under one platform. Also, Bourbaki can be thought of as a pseudonym for our group as well.
+Demo Link - https://www.youtube.com/watch?v=RyVen94LiUk&t=14s
 
 ## Bourbaki Tour
 
