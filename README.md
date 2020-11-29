@@ -31,19 +31,31 @@ Bourbaki is a mathematical app that processes handwritten texts and solves them 
 
 ![Login](https://user-images.githubusercontent.com/43987867/99906968-1a559b80-2d00-11eb-9e46-b40d1366460f.jpeg)![Signup](https://user-images.githubusercontent.com/43987867/99907134-170edf80-2d01-11eb-9bf4-95b4162274c5.jpeg)
 
-### Want help on Binomial Expansions ??
+### Want help on your daily Maths assingments ??
 
 ***Click your Query***
 
 ![Take Photo](https://user-images.githubusercontent.com/43987867/99907395-9cdf5a80-2d02-11eb-900c-72d953312dc1.jpeg)![Cropped image](https://user-images.githubusercontent.com/43987867/99907392-9bae2d80-2d02-11eb-982a-60c60e266af0.jpeg)
 
-***Select Problem Type*** (Binomial Expansion in our case!)
+***Select Problem Type*** 
 
-![Problem Type](https://user-images.githubusercontent.com/43987867/99907443-d0ba8000-2d02-11eb-91aa-b3d3ec87f3e5.jpeg)
+![Problem Type](https://user-images.githubusercontent.com/43987867/100548256-69b44280-3291-11eb-8526-cc855a545a9f.jpeg)
+
 
 ***Fire 'Get Solution' and let us deliver!!***
 
-![Solution](https://user-images.githubusercontent.com/43987867/99907952-b209b880-2d05-11eb-8335-21c66415a78b.jpeg)
+![WhatsApp Image 2020-11-29 at 8 57 04 PM (5)](https://user-images.githubusercontent.com/43987867/100548302-b009a180-3291-11eb-9a16-44676d37da6b.jpeg)
+
+![WhatsApp Image 2020-11-29 at 8 57 05 PM](https://user-images.githubusercontent.com/43987867/100548334-dfb8a980-3291-11eb-8e65-9be07fb0053c.jpeg)
+
+***Fourier Series***
+
+![WhatsApp Image 2020-11-29 at 8 57 03 PM](https://user-images.githubusercontent.com/43987867/100548349-0080ff00-3292-11eb-8bdc-dbf5f9c9ce65.jpeg)
+
+***Integration***
+
+![WhatsApp Image 2020-11-29 at 8 57 04 PM (3)](https://user-images.githubusercontent.com/43987867/100548438-90bf4400-3292-11eb-9bb1-3be02e02a942.jpeg)
+
 
 ***Logout***
 
