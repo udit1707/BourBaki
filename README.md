@@ -1,4 +1,4 @@
-# Bourbaki-HackMaths
+# Bourbaki-Winning Application
 
 ## Problem Statement
 
